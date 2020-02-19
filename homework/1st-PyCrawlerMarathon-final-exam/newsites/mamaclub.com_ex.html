@@ -1,0 +1,2506 @@
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="ie8"><![endif]-->
+<!--[if IE 9]><html class="ie9"><![endif]-->
+<!--[if gt IE 8]><!--> <html lang="zh-TW" prefix="og: http://ogp.me/ns#"> <!--<![endif]-->
+<head>
+<link rel='stylesheet' href='https://mamaclub.com/wp-content/plugins/mmc-wp-minify/min/?f=wp-content/plugins/wp-favorite-posts/wpfp.css,wp-content/plugins/meks-flexible-shortcodes/css/font-awesome/css/font-awesome.min.css,wp-content/plugins/meks-flexible-shortcodes/css/simple-line/simple-line-icons.css,wp-content/plugins/meks-flexible-shortcodes/css/style.css,wp-content/plugins/wp-polls/polls-css.css,wp-content/themes/voice/style.css,wp-content/themes/voice/css/responsive.css,wp-content/themes/voice-child/style.css,wp-content/plugins/meks-simple-flickr-widget/css/style.css,wp-content/plugins/meks-smart-author-widget/css/style.css,wp-content/plugins/meks-smart-social-widget/css/style.css,wp-content/plugins/meks-themeforest-smart-widget/css/style.css,wp-content/themes/voice/css/topbar.css&amp;m=1554116276' type='text/css' media='screen' />
+<script type='text/javascript' src='https://mamaclub.com/wp-content/plugins/mmc-wp-minify/min/?f=wp-includes/js/jquery/jquery.js,wp-includes/js/jquery/jquery-migrate.min.js,wp-content/plugins/meks-flexible-shortcodes/js/main.js,wp-content/plugins/wp-favorite-posts/wpfp.js,wp-content/themes/voice/mmcDfpDefined/googleTag.js,wp-content/themes/voice/mmcDfpDefined/pc_v6.js&amp;m=1555644214'></script>
+<link rel="manifest" href="/wp-content/themes/voice/manifest.json?x29673">
+<meta property="fb:pages" content="155477534498525" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"7616f8d5c7",applicationID:"47439934"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta property="fb:admins" content="683026538" />
+<meta property="fb:app_id" content="1398318470391556" />
+<meta property="dable:item_id" content="200446">
+<link rel="alternate" hreflang="zh-Hant" media="only screen and (max-width: 640px)" href="https://m.mamaclub.com//learn/%e5%91%82%e7%a7%8b%e9%81%a0%ef%bc%9a%e7%88%b6%e6%af%8d%e8%80%81%e6%84%9b%e6%8b%bf%e9%80%99%e5%8d%81%e5%8f%a5%e8%a9%b1%e5%92%8c%e5%ad%a9%e5%ad%90%e8%aa%aa%e5%98%b4/?utm_source=mamaclub.tw" />
+<!--[if lt IE 9]>
+	<script src="//mamaclub.com/wp-content/themes/voice/js/html5.js?x29673"></script>
+<![endif]-->
+<script>
+var JS_ABS_URL = "https://mamaclub.com/";
+var orig_ic = 'tw';
+var js_ic = getCookie('__ic');
+// console.log('orig_ic:' + js_ic);
+// console.log('js_ic:' + js_ic);
+function getCookie(name) {
+  var arg = escape(name) + "=";
+  var nameLen = arg.length;
+  var cookieLen = document.cookie.length;
+  var i = 0;
+  while (i < cookieLen) {
+    var j = i + nameLen;
+    if (document.cookie.substring(i, j) == arg) return getCookieValueByIndex(j);
+    i = document.cookie.indexOf(" ", i) + 1;
+    if (i == 0) break;
+  }
+  return null;
+}
+function getCookieValueByIndex(startIndex) {
+  var endIndex = document.cookie.indexOf(";", startIndex);
+  if (endIndex == -1) endIndex = document.cookie.length;
+  return unescape(document.cookie.substring(startIndex, endIndex));
+}
+</script>
+
+<title>父母老愛拿這十句話和孩子說嘴 &ndash; 媽媽經｜專屬於媽媽的網站</title>
+<meta name="description" content="你的孩子幾歲，你就當幾年的父母，父母別再拿這些話勒索孩子，用自以為是的愛來愛孩子，請時時刻刻反省自己。年紀比較大，說出來的話也不會比較有道理啦！" />
+<meta name="robots" content="noodp" />
+<meta name="keywords" content="律師,家庭教育,教養" />
+<link rel="canonical" href="https://mamaclub.com/learn/%e5%91%82%e7%a7%8b%e9%81%a0%ef%bc%9a%e7%88%b6%e6%af%8d%e8%80%81%e6%84%9b%e6%8b%bf%e9%80%99%e5%8d%81%e5%8f%a5%e8%a9%b1%e5%92%8c%e5%ad%a9%e5%ad%90%e8%aa%aa%e5%98%b4/" />
+<meta property="og:locale" content="zh_TW" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="父母老愛拿這十句話和孩子說嘴" />
+<meta property="og:description" content="你的孩子幾歲，你就當幾年的父母，父母別再拿這些話勒索孩子，用自以為是的愛來愛孩子，請時時刻刻反省自己。年紀比較大，說出來的話也不會比較有道理啦！" />
+<meta property="og:url" content="https://mamaclub.com/learn/%e5%91%82%e7%a7%8b%e9%81%a0%ef%bc%9a%e7%88%b6%e6%af%8d%e8%80%81%e6%84%9b%e6%8b%bf%e9%80%99%e5%8d%81%e5%8f%a5%e8%a9%b1%e5%92%8c%e5%ad%a9%e5%ad%90%e8%aa%aa%e5%98%b4/" />
+<meta property="og:site_name" content="媽媽經｜專屬於媽媽的網站" />
+<meta property="article:publisher" content="https://www.facebook.com/mamaclub.tw" />
+<meta property="article:author" content="https://www.facebook.com/mamaclub.tw" />
+<meta property="article:tag" content="家庭教育" />
+<meta property="article:tag" content="教養" />
+<meta property="article:section" content="媽媽經主粉ia" />
+<meta property="article:published_time" content="2020-02-14T16:00:49+08:00" />
+<meta property="article:modified_time" content="2020-02-14T18:50:29+08:00" />
+<meta property="og:updated_time" content="2020-02-14T18:50:29+08:00" />
+<meta property="og:image" content="https://cdn.mamaclub.com/wp-content/uploads/2016/10/20190214_k18.jpg" />
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="訂閱 媽媽經｜專屬於媽媽的網站 &raquo;" href="https://mamaclub.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="訂閱 媽媽經｜專屬於媽媽的網站 &raquo; 迴響" href="https://mamaclub.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="訂閱 媽媽經｜專屬於媽媽的網站 &raquo; 父母老愛拿這十句話和孩子說嘴 迴響" href="https://mamaclub.com/learn/%e5%91%82%e7%a7%8b%e9%81%a0%ef%bc%9a%e7%88%b6%e6%af%8d%e8%80%81%e6%84%9b%e6%8b%bf%e9%80%99%e5%8d%81%e5%8f%a5%e8%a9%b1%e5%92%8c%e5%ad%a9%e5%ad%90%e8%aa%aa%e5%98%b4/feed/" />
+<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"\/\/assets.mamaclub.com\/wp-includes\/js\/wp-emoji-release.min.js"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56794,8205,9794,65039],[55358,56794,8203,9794,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='vce_font_0-css' href='//fonts.googleapis.com/css?family=Open+Sans%3A400%2C300&#038;subset=latin%2Clatin-ext' type='text/css' media='screen' />
+<link rel='stylesheet' id='vce_font_1-css' href='//fonts.googleapis.com/css?family=Open+Sans+Condensed%3A400%2C300&#038;subset=latin%2Clatin-ext' type='text/css' media='screen' />
+<style id='vce_style-inline-css' type='text/css'>
+body {background-color:#f0f0f0;}h1,h2,h3,h4,h5,h6,blockquote,.vce-post-link,.site-title,.site-title a,.main-box-title,.comment-reply-title,.entry-title a,.vce-single .entry-headline p,.vce-prev-next-link,.author-title,.mks_pullquote,.widget_rss ul li .rsswidget {font-family: 'Open Sans';font-weight: 300;}.main-navigation a,.sidr a{font-family: 'Open Sans Condensed';font-weight: 300;}.vce-single .entry-content,.vce-single .entry-headline,.vce-single .entry-footer {width: 600px;}.vce-page .entry-content,.vce-page .entry-title-page {width: 600px;}.vce-sid-none .vce-single .entry-content,.vce-sid-none .vce-single .entry-headline,.vce-sid-none .vce-single .entry-footer {width: 600px;}.vce-sid-none .vce-page .entry-content,.vce-sid-none .vce-page .entry-title-page,.error404 .entry-content {width: 600px;max-width: 600px;}body, button, input, select, textarea{color: #444444;}h1,h2,h3,h4,h5,h6,.entry-title a,.prev-next-nav a{color: #232323;}a,.entry-title a:hover,.vce-prev-next-link:hover,.vce-author-links a:hover,.required,.error404 h4,.prev-next-nav a:hover{color: #dc4776;}.vce-square,.vce-main-content .mejs-controls .mejs-time-rail .mejs-time-current,button,input[type="button"],input[type="reset"],input[type="submit"],.vce-button,.pagination-wapper a,#vce-pagination .next.page-numbers,#vce-pagination .prev.page-numbers,#vce-pagination .page-numbers,#vce-pagination .page-numbers.current,.vce-link-pages a,#vce-pagination a,.vce-load-more a,.vce-slider-pagination .owl-nav > div,.comment-reply-link:hover,.vce-featured-section a,.vce-lay-g .vce-featured-info .meta-category a,.vce-404-menu a,.vce-post.sticky .meta-image:before,#vce-pagination .page-numbers:hover{background-color: #dc4776;}#vce-pagination .page-numbers{background: transparent;color: #dc4776;border: 1px solid #dc4776;}#vce-pagination .page-numbers.current{border: 1px solid #dc4776;}.widget_categories .cat-item:before,.widget_categories .cat-item .count{background: #dc4776;}.comment-reply-link{border: 1px solid #dc4776; }.entry-meta div, .entry-meta div a,.comment-metadata a,.meta-category span,.meta-author-wrapped,.wp-caption .wp-caption-text,.widget_rss .rss-date,.sidebar cite,.site-footer cite,.sidebar .vce-post-list .entry-meta div, .sidebar .vce-post-list .entry-meta div a, .sidebar .vce-post-list .fn, .sidebar .vce-post-list .fn a,.site-footer .vce-post-list .entry-meta div, .site-footer .vce-post-list .entry-meta div a, .site-footer .vce-post-list .fn, .site-footer .vce-post-list .fn a{color: #9b9b9b; }.main-box-title, .comment-reply-title, .main-box-head{background: #ffffff;color: #232323;}.sidebar .widget .widget-title a{color: #232323;}.main-box,.comment-respond,.prev-next-nav{background: #f9f9f9;}.vce-post,ul.comment-list > li.comment,.main-box-single,.ie8 .vce-single,#disqus_thread,.vce-author-card,.vce-author-card .vce-content-outside{background: #ffffff;}.mks_tabs.horizontal .mks_tab_nav_item.active{border-bottom: 1px solid #ffffff; }.mks_tabs.horizontal .mks_tab_item,.mks_tabs.vertical .mks_tab_nav_item.active,.mks_tabs.horizontal .mks_tab_nav_item.active{background: #ffffff;}.mks_tabs.vertical .mks_tab_nav_item.active{border-right: 1px solid #ffffff; }#vce-pagination, .vce-slider-pagination .owl-controls,.vce-content-outside{background: #f3f3f3;}.sidebar .widget-title{background: #ffffff; color: #232323; }.sidebar .widget{background: #f9f9f9; }.sidebar .widget,.sidebar .widget li a,.sidebar .mks_author_widget h3 a,.sidebar .mks_author_widget h3,.sidebar .vce-search-form .vce-search-input, .sidebar .vce-search-form .vce-search-input:focus{color: #444444; }.sidebar .widget li a:hover,.sidebar .widget a,.widget_nav_menu li.menu-item-has-children:hover:after,.widget_pages li.page_item_has_children:hover:after{color: #a0a0a0; }.sidebar .tagcloud a {border: 1px solid #a0a0a0; }.sidebar .mks_author_link,.sidebar .tagcloud a:hover, .sidebar .mks_themeforest_widget .more,.sidebar button,.sidebar input[type="button"],.sidebar input[type="reset"],.sidebar input[type="submit"],.sidebar .vce-button{background-color: #a0a0a0; }.sidebar .mks_author_widget .mks_autor_link_wrap, .sidebar .mks_themeforest_widget .mks_read_more{background: #f3f3f3; }.sidebar #wp-calendar caption,.sidebar .recentcomments,.sidebar .post-date,.sidebar #wp-calendar tbody{color: rgba(68,68,68,0.7); }.site-footer{background: #d28ea0; }.site-footer .widget-title{color: #ffffff; }.site-footer,.site-footer .widget,.site-footer .widget li a,.site-footer .mks_author_widget h3 a,.site-footer .mks_author_widget h3,.site-footer .vce-search-form .vce-search-input, .site-footer .vce-search-form .vce-search-input:focus{color: #f9f9f9; }.site-footer .widget li a:hover,.site-footer .widget a,.site-info a{color: #dc4776; }.site-footer .tagcloud a {border: 1px solid #dc4776; }.site-footer .mks_author_link, .site-footer .mks_themeforest_widget .more,.site-footer button,.site-footer input[type="button"],.site-footer input[type="reset"],.site-footer input[type="submit"],.site-footer .vce-button,.site-footer .tagcloud a:hover{background-color: #dc4776; }.site-footer #wp-calendar caption,.site-footer .recentcomments,.site-footer .post-date,.site-footer #wp-calendar tbody,.site-footer .site-info{color: rgba(249,249,249,0.7); }.top-header{background: #dc4776; }.top-header,.top-header a{color: #ffffff; }.header-1-wrapper{height: 90px;padding-top: 15px;}.header-2-wrapper,.header-3-wrapper{height: 90px;}.header-2-wrapper .site-branding,.header-3-wrapper .site-branding{top: 15px;left: 19px;}.site-title a, .site-title a:hover{color: #232323;}.site-description{color: #aaaaaa;}.main-header{background-color: #ffffff;}.header-bottom-wrapper{background: #fcfcfc;}.vce-header-ads{margin: 0px 0;}.header-3-wrapper .nav-menu > li > a{padding: 35px 15px;}.header-sticky,.sidr{background: rgba(252,252,252,0.95);}.ie8 .header-sticky{background: #ffffff;}.main-navigation a,.nav-menu .vce-mega-menu > .sub-menu > li > a,.sidr li a,.vce-menu-parent{color: #4a4a4a;}.nav-menu > li:hover > a, .nav-menu > .current_page_item > a, .nav-menu > .current-menu-item > a, .nav-menu > .current-menu-ancestor > a, .main-navigation a.vce-item-selected,.main-navigation ul ul li:hover > a,.nav-menu ul .current-menu-item a,.nav-menu ul .current_page_item a,.vce-menu-parent:hover,.sidr li a:hover{color: #dc4776;}.nav-menu > li:hover > a, .nav-menu > .current_page_item > a, .nav-menu > .current-menu-item > a, .nav-menu > .current-menu-ancestor > a, .main-navigation a.vce-item-selected,.main-navigation ul ul,.header-sticky .nav-menu > .current_page_item:hover > a, .header-sticky .nav-menu > .current-menu-item:hover > a, .header-sticky .nav-menu > .current-menu-ancestor:hover > a, .header-sticky .main-navigation a.vce-item-selected:hover{background-color: #ffffff;}.search-header-wrap ul{border-top: 2px solid #dc4776;}.vce-border-top .main-box-title{border-top: 2px solid #dc4776;}.tagcloud a:hover,.sidebar .widget .mks_author_link,.sidebar .widget.mks_themeforest_widget .more,.site-footer .widget .mks_author_link,.site-footer .widget.mks_themeforest_widget .more,.vce-lay-g .entry-meta div,.vce-lay-g .fn, .vce-lay-g .fn a{color: #FFF;}a.category-0{ color: ;}body.category-0 .main-box-title, .main-box-title.cat-0 { border-top: 2px solid ;}.widget_categories li.cat-item-0 .count { background: ;}.widget_categories li.cat-item-0:before { background:;}.vce-featured-section .category-0{ background: ;}.vce-lay-g .vce-featured-info .meta-category a.category-0{ background-color: ;}.main-navigation li.vce-cat-0 a:hover { color: ;}a.category-26{ color: #cdc943;}body.category-26 .main-box-title, .main-box-title.cat-26 { border-top: 2px solid #cdc943;}.widget_categories li.cat-item-26 .count { background: #cdc943;}.widget_categories li.cat-item-26:before { background:#cdc943;}.vce-featured-section .category-26{ background: #cdc943;}.vce-lay-g .vce-featured-info .meta-category a.category-26{ background-color: #cdc943;}.main-navigation li.vce-cat-26 a:hover { color: #cdc943;}a.category-5{ color: #a678b4;}body.category-5 .main-box-title, .main-box-title.cat-5 { border-top: 2px solid #a678b4;}.widget_categories li.cat-item-5 .count { background: #a678b4;}.widget_categories li.cat-item-5:before { background:#a678b4;}.vce-featured-section .category-5{ background: #a678b4;}.vce-lay-g .vce-featured-info .meta-category a.category-5{ background-color: #a678b4;}.main-navigation li.vce-cat-5 a:hover { color: #a678b4;}a.category-4409{ color: #f27160;}body.category-4409 .main-box-title, .main-box-title.cat-4409 { border-top: 2px solid #f27160;}.widget_categories li.cat-item-4409 .count { background: #f27160;}.widget_categories li.cat-item-4409:before { background:#f27160;}.vce-featured-section .category-4409{ background: #f27160;}.vce-lay-g .vce-featured-info .meta-category a.category-4409{ background-color: #f27160;}.main-navigation li.vce-cat-4409 a:hover { color: #f27160;}a.category-6{ color: #8cc63e;}body.category-6 .main-box-title, .main-box-title.cat-6 { border-top: 2px solid #8cc63e;}.widget_categories li.cat-item-6 .count { background: #8cc63e;}.widget_categories li.cat-item-6:before { background:#8cc63e;}.vce-featured-section .category-6{ background: #8cc63e;}.vce-lay-g .vce-featured-info .meta-category a.category-6{ background-color: #8cc63e;}.main-navigation li.vce-cat-6 a:hover { color: #8cc63e;}a.category-4408{ color: #45b1a7;}body.category-4408 .main-box-title, .main-box-title.cat-4408 { border-top: 2px solid #45b1a7;}.widget_categories li.cat-item-4408 .count { background: #45b1a7;}.widget_categories li.cat-item-4408:before { background:#45b1a7;}.vce-featured-section .category-4408{ background: #45b1a7;}.vce-lay-g .vce-featured-info .meta-category a.category-4408{ background-color: #45b1a7;}.main-navigation li.vce-cat-4408 a:hover { color: #45b1a7;}a.category-1{ color: #83b9e4;}body.category-1 .main-box-title, .main-box-title.cat-1 { border-top: 2px solid #83b9e4;}.widget_categories li.cat-item-1 .count { background: #83b9e4;}.widget_categories li.cat-item-1:before { background:#83b9e4;}.vce-featured-section .category-1{ background: #83b9e4;}.vce-lay-g .vce-featured-info .meta-category a.category-1{ background-color: #83b9e4;}.main-navigation li.vce-cat-1 a:hover { color: #83b9e4;}a.category-4410{ color: #8cc63e;}body.category-4410 .main-box-title, .main-box-title.cat-4410 { border-top: 2px solid #8cc63e;}.widget_categories li.cat-item-4410 .count { background: #8cc63e;}.widget_categories li.cat-item-4410:before { background:#8cc63e;}.vce-featured-section .category-4410{ background: #8cc63e;}.vce-lay-g .vce-featured-info .meta-category a.category-4410{ background-color: #8cc63e;}.main-navigation li.vce-cat-4410 a:hover { color: #8cc63e;}a.category-121{ color: #8cc63e;}body.category-121 .main-box-title, .main-box-title.cat-121 { border-top: 2px solid #8cc63e;}.widget_categories li.cat-item-121 .count { background: #8cc63e;}.widget_categories li.cat-item-121:before { background:#8cc63e;}.vce-featured-section .category-121{ background: #8cc63e;}.vce-lay-g .vce-featured-info .meta-category a.category-121{ background-color: #8cc63e;}.main-navigation li.vce-cat-121 a:hover { color: #8cc63e;}a.category-120{ color: #8cc63e;}body.category-120 .main-box-title, .main-box-title.cat-120 { border-top: 2px solid #8cc63e;}.widget_categories li.cat-item-120 .count { background: #8cc63e;}.widget_categories li.cat-item-120:before { background:#8cc63e;}.vce-featured-section .category-120{ background: #8cc63e;}.vce-lay-g .vce-featured-info .meta-category a.category-120{ background-color: #8cc63e;}.main-navigation li.vce-cat-120 a:hover { color: #8cc63e;}a.category-117{ color: #f27160;}body.category-117 .main-box-title, .main-box-title.cat-117 { border-top: 2px solid #f27160;}.widget_categories li.cat-item-117 .count { background: #f27160;}.widget_categories li.cat-item-117:before { background:#f27160;}.vce-featured-section .category-117{ background: #f27160;}.vce-lay-g .vce-featured-info .meta-category a.category-117{ background-color: #f27160;}.main-navigation li.vce-cat-117 a:hover { color: #f27160;}a.category-36{ color: #f27160;}body.category-36 .main-box-title, .main-box-title.cat-36 { border-top: 2px solid #f27160;}.widget_categories li.cat-item-36 .count { background: #f27160;}.widget_categories li.cat-item-36:before { background:#f27160;}.vce-featured-section .category-36{ background: #f27160;}.vce-lay-g .vce-featured-info .meta-category a.category-36{ background-color: #f27160;}.main-navigation li.vce-cat-36 a:hover { color: #f27160;}a.category-126{ color: #f27160;}body.category-126 .main-box-title, .main-box-title.cat-126 { border-top: 2px solid #f27160;}.widget_categories li.cat-item-126 .count { background: #f27160;}.widget_categories li.cat-item-126:before { background:#f27160;}.vce-featured-section .category-126{ background: #f27160;}.vce-lay-g .vce-featured-info .meta-category a.category-126{ background-color: #f27160;}.main-navigation li.vce-cat-126 a:hover { color: #f27160;}a.category-7{ color: #45b1a7;}body.category-7 .main-box-title, .main-box-title.cat-7 { border-top: 2px solid #45b1a7;}.widget_categories li.cat-item-7 .count { background: #45b1a7;}.widget_categories li.cat-item-7:before { background:#45b1a7;}.vce-featured-section .category-7{ background: #45b1a7;}.vce-lay-g .vce-featured-info .meta-category a.category-7{ background-color: #45b1a7;}.main-navigation li.vce-cat-7 a:hover { color: #45b1a7;}a.category-3{ color: #45b1a7;}body.category-3 .main-box-title, .main-box-title.cat-3 { border-top: 2px solid #45b1a7;}.widget_categories li.cat-item-3 .count { background: #45b1a7;}.widget_categories li.cat-item-3:before { background:#45b1a7;}.vce-featured-section .category-3{ background: #45b1a7;}.vce-lay-g .vce-featured-info .meta-category a.category-3{ background-color: #45b1a7;}.main-navigation li.vce-cat-3 a:hover { color: #45b1a7;}a.category-123{ color: #83b9e4;}body.category-123 .main-box-title, .main-box-title.cat-123 { border-top: 2px solid #83b9e4;}.widget_categories li.cat-item-123 .count { background: #83b9e4;}.widget_categories li.cat-item-123:before { background:#83b9e4;}.vce-featured-section .category-123{ background: #83b9e4;}.vce-lay-g .vce-featured-info .meta-category a.category-123{ background-color: #83b9e4;}.main-navigation li.vce-cat-123 a:hover { color: #83b9e4;}a.category-119{ color: #83b9e4;}body.category-119 .main-box-title, .main-box-title.cat-119 { border-top: 2px solid #83b9e4;}.widget_categories li.cat-item-119 .count { background: #83b9e4;}.widget_categories li.cat-item-119:before { background:#83b9e4;}.vce-featured-section .category-119{ background: #83b9e4;}.vce-lay-g .vce-featured-info .meta-category a.category-119{ background-color: #83b9e4;}.main-navigation li.vce-cat-119 a:hover { color: #83b9e4;}a.category-4411{ color: #83b9e4;}body.category-4411 .main-box-title, .main-box-title.cat-4411 { border-top: 2px solid #83b9e4;}.widget_categories li.cat-item-4411 .count { background: #83b9e4;}.widget_categories li.cat-item-4411:before { background:#83b9e4;}.vce-featured-section .category-4411{ background: #83b9e4;}.vce-lay-g .vce-featured-info .meta-category a.category-4411{ background-color: #83b9e4;}.main-navigation li.vce-cat-4411 a:hover { color: #83b9e4;}a.category-34{ color: #cdc943;}body.category-34 .main-box-title, .main-box-title.cat-34 { border-top: 2px solid #cdc943;}.widget_categories li.cat-item-34 .count { background: #cdc943;}.widget_categories li.cat-item-34:before { background:#cdc943;}.vce-featured-section .category-34{ background: #cdc943;}.vce-lay-g .vce-featured-info .meta-category a.category-34{ background-color: #cdc943;}.main-navigation li.vce-cat-34 a:hover { color: #cdc943;}a.category-22{ color: #cdc943;}body.category-22 .main-box-title, .main-box-title.cat-22 { border-top: 2px solid #cdc943;}.widget_categories li.cat-item-22 .count { background: #cdc943;}.widget_categories li.cat-item-22:before { background:#cdc943;}.vce-featured-section .category-22{ background: #cdc943;}.vce-lay-g .vce-featured-info .meta-category a.category-22{ background-color: #cdc943;}.main-navigation li.vce-cat-22 a:hover { color: #cdc943;}a.category-4765{ color: #a678b4;}body.category-4765 .main-box-title, .main-box-title.cat-4765 { border-top: 2px solid #a678b4;}.widget_categories li.cat-item-4765 .count { background: #a678b4;}.widget_categories li.cat-item-4765:before { background:#a678b4;}.vce-featured-section .category-4765{ background: #a678b4;}.vce-lay-g .vce-featured-info .meta-category a.category-4765{ background-color: #a678b4;}.main-navigation li.vce-cat-4765 a:hover { color: #a678b4;}a.category-4767{ color: #a678b4;}body.category-4767 .main-box-title, .main-box-title.cat-4767 { border-top: 2px solid #a678b4;}.widget_categories li.cat-item-4767 .count { background: #a678b4;}.widget_categories li.cat-item-4767:before { background:#a678b4;}.vce-featured-section .category-4767{ background: #a678b4;}.vce-lay-g .vce-featured-info .meta-category a.category-4767{ background-color: #a678b4;}.main-navigation li.vce-cat-4767 a:hover { color: #a678b4;}a.category-4768{ color: #a678b4;}body.category-4768 .main-box-title, .main-box-title.cat-4768 { border-top: 2px solid #a678b4;}.widget_categories li.cat-item-4768 .count { background: #a678b4;}.widget_categories li.cat-item-4768:before { background:#a678b4;}.vce-featured-section .category-4768{ background: #a678b4;}.vce-lay-g .vce-featured-info .meta-category a.category-4768{ background-color: #a678b4;}.main-navigation li.vce-cat-4768 a:hover { color: #a678b4;}a.category-4769{ color: #a678b4;}body.category-4769 .main-box-title, .main-box-title.cat-4769 { border-top: 2px solid #a678b4;}.widget_categories li.cat-item-4769 .count { background: #a678b4;}.widget_categories li.cat-item-4769:before { background:#a678b4;}.vce-featured-section .category-4769{ background: #a678b4;}.vce-lay-g .vce-featured-info .meta-category a.category-4769{ background-color: #a678b4;}.main-navigation li.vce-cat-4769 a:hover { color: #a678b4;}a.category-4772{ color: #dc4776;}body.category-4772 .main-box-title, .main-box-title.cat-4772 { border-top: 2px solid #dc4776;}.widget_categories li.cat-item-4772 .count { background: #dc4776;}.widget_categories li.cat-item-4772:before { background:#dc4776;}.vce-featured-section .category-4772{ background: #dc4776;}.vce-lay-g .vce-featured-info .meta-category a.category-4772{ background-color: #dc4776;}.main-navigation li.vce-cat-4772 a:hover { color: #dc4776;}a.category-23341{ color: #ffffff;}body.category-23341 .main-box-title, .main-box-title.cat-23341 { border-top: 2px solid #ffffff;}.widget_categories li.cat-item-23341 .count { background: #ffffff;}.widget_categories li.cat-item-23341:before { background:#ffffff;}.vce-featured-section .category-23341{ background: #ffffff;}.vce-lay-g .vce-featured-info .meta-category a.category-23341{ background-color: #ffffff;}.main-navigation li.vce-cat-23341 a:hover { color: #ffffff;}a.category-23441{ color: #ffffff;}body.category-23441 .main-box-title, .main-box-title.cat-23441 { border-top: 2px solid #ffffff;}.widget_categories li.cat-item-23441 .count { background: #ffffff;}.widget_categories li.cat-item-23441:before { background:#ffffff;}.vce-featured-section .category-23441{ background: #ffffff;}.vce-lay-g .vce-featured-info .meta-category a.category-23441{ background-color: #ffffff;}.main-navigation li.vce-cat-23441 a:hover { color: #ffffff;}a.category-37864{ color: #ff0000;}body.category-37864 .main-box-title, .main-box-title.cat-37864 { border-top: 2px solid #ff0000;}.widget_categories li.cat-item-37864 .count { background: #ff0000;}.widget_categories li.cat-item-37864:before { background:#ff0000;}.vce-featured-section .category-37864{ background: #ff0000;}.vce-lay-g .vce-featured-info .meta-category a.category-37864{ background-color: #ff0000;}.main-navigation li.vce-cat-37864 a:hover { color: #ff0000;}
+</style>
+<link rel='stylesheet' id='meks-ads-widget-css' href='//assets.mamaclub.com/wp-content/plugins/meks-easy-ads-widget/css/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='mmc-meks-ads-widget-css' href='//assets.mamaclub.com/wp-content/plugins/meks-easy-ads-widget/css/style.css' type='text/css' media='all' />
+<link rel='https://api.w.org/' href='https://mamaclub.com/wp-json/' />
+<link rel='shortlink' href='https://mamaclub.com/?p=200446' />
+<link rel="alternate" type="application/json+oembed" href="https://mamaclub.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmamaclub.com%2Flearn%2F%25e5%2591%2582%25e7%25a7%258b%25e9%2581%25a0%25ef%25bc%259a%25e7%2588%25b6%25e6%25af%258d%25e8%2580%2581%25e6%2584%259b%25e6%258b%25bf%25e9%2580%2599%25e5%258d%2581%25e5%258f%25a5%25e8%25a9%25b1%25e5%2592%258c%25e5%25ad%25a9%25e5%25ad%2590%25e8%25aa%25aa%25e5%2598%25b4%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://mamaclub.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmamaclub.com%2Flearn%2F%25e5%2591%2582%25e7%25a7%258b%25e9%2581%25a0%25ef%25bc%259a%25e7%2588%25b6%25e6%25af%258d%25e8%2580%2581%25e6%2584%259b%25e6%258b%25bf%25e9%2580%2599%25e5%258d%2581%25e5%258f%25a5%25e8%25a9%25b1%25e5%2592%258c%25e5%25ad%25a9%25e5%25ad%2590%25e8%25aa%25aa%25e5%2598%25b4%2F&#038;format=xml" />
+<style type="text/css">
+.wp-polls .pollbar {
+	margin: 1px;
+	font-size: 8px;
+	line-height: 10px;
+	height: 10px;
+	background-image: url('//mamaclub.com/wp-content/plugins/wp-polls/images/default_gradient/pollbg.gif');
+	border: 1px solid #c8c8c8;
+}
+</style>
+<style>
+                .MMC_logout{
+                    display:none !important;
+                }
+            </style> <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+<style type="text/css">
+            .recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}
+            .recentcomments p{
+                padding: 10px 0 0 ;
+                margin: 0;
+                overflow : hidden;
+                text-overflow: ellipsis;
+                color: #919191;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;}
+            .recentcomments span{
+                width: 100%;
+                display:flex ;
+                justify-content: flex-end;
+                padding-top:10px ;
+            }
+        </style>
+<script>
+				var mmc_trace_id = 0;
+			</script><link rel="shortcut icon" href="https://cdn.mamaclub.com/wp-content/uploads/2017/11/mmc大頭.png" type="image/x-icon" /><link rel="apple-touch-icon" href="https://cdn.mamaclub.com/wp-content/uploads/2015/03/77x771.png" /><meta name="msapplication-TileColor" content="#ffffff"><meta name="msapplication-TileImage" content="https://cdn.mamaclub.com/wp-content/uploads/2015/03/144x1441.png" /><link rel="stylesheet" href="//mamaclub.com/wp-content/themes/voice/mmc_theme_options/additional_css.css?x29673" type="text/css"><style type="text/css">.single-post #primary .main-box article h2 { font-size: 18px !important; margin-bottom: -10px; }</style><script src="//mamaclub.com/wp-content/themes/voice/mmc_theme_options/ga.js?x29673"></script> <meta name='single' content='200446'><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>var is_mobile = false;</script>
+<script type='text/javascript'>
+	dfpPush(false, false, false, false, true );
+</script>
+<script type="text/javascript">var isMobile = false</script>
+
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '718861714885435');
+fbq('track', "PageView");
+fbq('track', 'ViewContent');console.log("fbq, track, ViewContent");fbq('trackCustom', 'PostCategory', {name:'媽媽經主粉ia' , slug:'mainia'});fbq('trackCustom', 'PostCategory', {name:'懷孕與教養' , slug:'pregnantandeducated'});fbq('trackCustom', 'PostTag', {name:'家庭教育'});fbq('trackCustom', 'PostTag', {name:'教養'});
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=718861714885435&ev=PageView&noscript=1" /></noscript>
+<script>
+//Google Tag Manager -->
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KRJ2XKQ');
+//End Google Tag Manager -->
+// Begin Optimize Google Tag Manager
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5L4V6B2');
+// End Optimize Google Tag Manager
+//BEGIN Optimize GTM by Leo 20190102-->
+(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+})(window,document.documentElement,'async-hide','dataLayer',4000,
+{'GTM-5L4V6B2':true});
+//END Optimize GTM by Leo 20190102-->
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+</script>
+<meta name="og:image:width" content="848">
+<meta name="og:image:height" content="446">
+
+</head>
+<body class="post-template-default single single-post postid-200446 single-format-standard unknown vce-sid-right">
+<div id="fb-root"></div>
+<script>
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&appId=1398318470391556&version=v3.2";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div id="vce-main">
+<header id="header" class="main-header" name="mmc-header">
+<div id="sidr-mask"></div>
+<div id="custom-sidr" style="display:none; visibility:hidden;">
+<div id="sidr-box">
+<div id="sidr-box-content" style="padding: 20px 0 10px">
+<div id="sidr-mamaclub">
+<a class="trace_login" place="漢堡註冊" href="#" onclick="signupToRedirect(''); return false;">
+立即加入<br />
+媽媽經
+</a>
+</div>
+<div id="sidr-facebook" class="trace_login" place="漢堡FB註冊" style="height: 60px; position: relative; top: -11px; padding-top: 16px;">
+<a href="#" onclick="MMC_LoginFb()">
+<img title="fb" alt="fb" style="margin-top: -4px; margin-right: 8px; height: 35px; width: 35px; display: inline-block; border-radius: 5px; border: 1px solid rgba(255,255,255,0.3);" src="//mamaclub.com/wp-content/themes/voice/images/share-icon/fb-icon.png?x29673">
+<span style="display:inline-block">
+登入
+</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="wrapper-topbar">
+<div class="topbar-left">
+<font class="link-home"><a href="//mamaclub.com" title="實用知識庫">學知識 首頁</a>｜</font>
+<a class="link-m-home" href="//mamaclub.com" title="媽媽經．學知識首頁" style="display: block;"><i class="fa fa-home fa-3" aria-hidden="true"></i></a>
+<a class="link-event" href="//mamaclub.com/event/" title="玩活動">玩活動</a>
+<a class="link-m-event" href="//mamaclub.com/event/" title="玩活動">玩活動</a>
+<a class="link-chat" href="//mamaclub.com/chat/" title="談心討論區">來談心</a>
+<a class="link-m-chat" href="//mamaclub.com/chat/" title="談心討論區">來談心</a>
+<a class="link-fun" href="//mamaclub.com/gotravel/" title="放心玩">放心玩</a>
+<a id="member-btn" class="trace_login" place="頁頂登入" href="javascript:;" onclick="loginToRedirect(''); return false;"><span>登入</span></a>
+</div>
+<div class="topbar-right">
+<a style="margin-right:3.5px;" href="javascript:;" onclick="loginToRedirect(''); return false;">登入</a><font style="color: #FFF; padding-right: 4px; float:left;">/</font><a class="trace_login" place="頁首註冊" href="javascript:;" onclick="signupToRedirect(''); return false;">註冊</a>
+<span class="mini-nav-hello"></span>
+<div class="location_change">
+<div class="l_c-text" data-value="hk" style="cursor:pointer;"><span>前往香港站</span></div>
+</div>
+<script type="text/javascript">
+            //location change
+            function getCookie(name) {
+                var arg = escape(name) + "=";
+                var nameLen = arg.length;
+                var cookieLen = document.cookie.length;
+                var i = 0;
+                while (i < cookieLen) {
+                    var j = i + nameLen;
+                    if (document.cookie.substring(i, j) == arg) return getCookieValueByIndex(j);
+                    i = document.cookie.indexOf(" ", i) + 1;
+                    if (i == 0) break;
+                }
+                return null;
+            }
+            function getCookieValueByIndex(startIndex) {
+                var endIndex = document.cookie.indexOf(";", startIndex);
+                if (endIndex == -1) endIndex = document.cookie.length;
+                return unescape(document.cookie.substring(startIndex, endIndex));
+            }
+            var js_ic = getCookie('__ic');
+            if( js_ic == 'tw' ){
+                jQuery('.location_change').html("<div class=\"l_c-text\" data-value=\"hk\" style='display:flex;align-items:center;color:white;cursor:pointer;'><span style='margin-right:5px;'>前往香港站</span><img src=\"//mamaclub.com/wp-content/themes/voice/images/location-flag/hk.png\"></div>");
+            } else {
+                jQuery('.location_change').html("<div class=\"l_c-text\" data-value=\"tw\" style='display:flex;align-items:center;color:white;cursor:pointer;'><span style='margin-right:5px;'>前往台灣站</span><img src=\"//mamaclub.com/wp-content/themes/voice/images/location-flag/tw.png\"></div>");
+            }
+            jQuery('.l_c-text').on('click', function() {
+                var ic = jQuery(this).attr('data-value');
+                if(ic == 'hk'){
+                    jQuery.cookie('__ic', ic, { expires: '', domain: 'hk.mamaclub.com', path: "/" });
+                    location.href = 'https://'+ic+'.mamaclub.com/';
+                }
+                else {
+                    jQuery.cookie('__ic', ic, { expires: '', domain: '.mamaclub.com', path: "/" });
+                    location.href=location.href;
+                }
+            });
+        </script>
+</div>
+</div>
+<div class="container header-2-wrapper header-main-area">
+<i class="fa fa-search" id="iconSearch-mobile" onclick="jQuery('#header #searchbarForMobile').toggle(800);" style="float: left; margin: 16px 0px 0px 20px; color: #dc2776; font-size: 20px;"></i>
+<div class="vce-res-nav">
+<a class="vce-responsive-nav" href="#sidr-main"><i class="fa fa-bars"></i></a>
+</div>
+<div class="site-branding">
+<span class="site-title">
+<a href="https://mamaclub.com/" title="媽媽經｜專屬於媽媽的網站" class="has-logo">
+<img id="pc_logo" class="pc_logo_width" style="margin-left: -18px;" src="//mamaclub.com/wp-content/themes/voice/images/logo/head-logo-400x63-bkword.png?x29673" alt="媽媽經｜專屬於媽媽的網站" />
+<img id="mb_logo" style="margin: 5px 0 0 -18px;" src="//mamaclub.com/wp-content/themes/voice/images/logo/logo-learn_m.png?x29673" alt="媽媽經｜專屬於媽媽的網站" />
+</a>
+</span>
+<span class="site-description"></span>
+</div>
+<style>
+		.header-main-area {
+			overflow: hidden;
+		}
+		.main-header {
+			background-image: url("//mamaclub.com/wp-content/themes/voice/mmcTemplates/mmcEditor/banner/pc_1418x180.jpg");
+			background-position: top center;
+		}
+		@media only screen and (max-width: 1023px) {
+			.main-header{
+			  background-image: none;
+			}
+			#header_banner{
+			  display: none;
+			}
+		}
+		@media only screen and (max-width: 1200px) and (min-width: 1024px) {
+			#header_banner a{
+			  max-width: 160px;
+			  padding-top: 25px;
+			}
+		}
+	</style>
+<div id="header_banner">
+
+<img style="display:block; position:absolute; left:315px; top:0px;" alt="每月熱門話題" src="//mamaclub.com/wp-content/themes/voice/mmcTemplates/mmcEditor/banner/pc_300x100_transpacy.png?x29673">
+
+</div>
+
+
+<div class="vce-header-ads">
+<form class="vce-search-form" name="searchBar" id="vce-search-form" action="https://mamaclub.com/" method="get">
+<input name="s" id="s" class="vce-search-input" size="20" type="text" value="" placeholder="搜尋大小識，解決媽媽事..." />
+<button type="submit" class="vce-search-submit"><i class="fa fa-search"></i></button>
+<div id="search-keyword">
+<div style="color: #dc4776;">熱門：</div>
+<div class='dfp_ad_keyword dfp_keyword' id='div-gpt-ad-1427353118429-0'><script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1427353118429-0'); });</script></div>
+<div class='dfp_ad_keyword dfp_keyword' id='div-gpt-ad-1427867464920-0'><script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1427867464920-0'); });</script></div>
+<div class='dfp_ad_keyword dfp_keyword' id='div-gpt-ad-1427867506407-0'><script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1427867506407-0'); });</script></div>
+<div class='dfp_ad_keyword dfp_keyword' id='div-gpt-ad-1427867551561-0'><script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1427867551561-0'); });</script></div>
+</div>
+</form>
+<script>
+	function searchBarSubmit(){
+		if(jQuery('#s').val() == ''){
+			jQuery('#s').val('媽媽經');
+		}
+		return true;
+	}
+	jQuery('#vce-search-form').submit(function(){ return searchBarSubmit(); });
+</script>
+</div>
+</div>
+<div class="header-bottom-wrapper header-left-nav">
+<div class="container">
+<nav id="site-navigation" class="main-navigation" role="navigation">
+<ul id="vce_main_navigation_menu" class="nav-menu"><li id="menu-item-281351" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-281351"><a href="https://mamaclub.com/hotissue/?utm_source=熱門主題">熱門主題</a></li>
+<li id="menu-item-74289" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-74289 vce-cat-26"><a href="https://mamaclub.com/learn/category/mamasmart/">家事廚藝通</a>
+<ul class="sub-menu">
+<li id="menu-item-74291" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-74291 vce-cat-34"><a href="https://mamaclub.com/learn/category/mamasmart/food/">媽媽廚房經</a></li>
+<li id="menu-item-74290" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-74290 vce-cat-22"><a href="https://mamaclub.com/learn/category/mamasmart/lifeassistance/">生活智慧王</a></li>
+</ul>
+</li>
+<li id="menu-item-74292" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-74292 vce-cat-5"><a href="https://mamaclub.com/learn/category/familyrelationship/">婚姻真心話</a>
+<ul class="sub-menu">
+<li id="menu-item-88863" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-88863"><a href="https://mamaclub.com/mamaheart/">看見大人物</a></li>
+</ul>
+</li>
+<li id="menu-item-74293" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-74293 vce-cat-4409"><a href="https://mamaclub.com/learn/category/womanpower/">女人我最大</a>
+<ul class="sub-menu">
+<li id="menu-item-74294" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-74294 vce-cat-117"><a href="https://mamaclub.com/learn/category/womanpower/moneymoney/">女人要有錢</a></li>
+<li id="menu-item-74295" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-74295 vce-cat-36"><a href="https://mamaclub.com/learn/category/womanpower/fashion/">時尚美媽咪</a></li>
+<li id="menu-item-74296" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-74296 vce-cat-126"><a href="https://mamaclub.com/learn/category/womanpower/woman/">閨房那檔事</a></li>
+</ul>
+</li>
+<li id="menu-item-74297" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-74297 vce-cat-6"><a href="https://mamaclub.com/learn/category/healthy/">健康百寶箱</a>
+<ul class="sub-menu">
+<li id="menu-item-74300" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-74300 vce-cat-4410"><a href="https://mamaclub.com/learn/category/healthy/healthfamily/">全家都健康</a></li>
+<li id="menu-item-74298" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-74298 vce-cat-121"><a href="https://mamaclub.com/learn/category/healthy/mamalovehealthy/">媽媽愛健康</a></li>
+<li id="menu-item-74299" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-74299 vce-cat-120"><a href="https://mamaclub.com/learn/category/healthy/babylovehealthy/">孩子健康事</a></li>
+</ul>
+</li>
+<li id="menu-item-74301" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-74301 vce-cat-4408"><a href="https://mamaclub.com/learn/category/pregnantandeducated/">懷孕與教養</a>
+<ul class="sub-menu">
+<li id="menu-item-526769" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-526769"><a href="https://mamaclub.com/learn/collection/godteammate/">孕期神隊友</a></li>
+<li id="menu-item-74303" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-74303 vce-cat-3"><a href="https://mamaclub.com/learn/category/pregnantandeducated/pregnacy/">懷孕大小事</a></li>
+<li id="menu-item-74302" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-74302 vce-cat-7"><a href="https://mamaclub.com/learn/category/pregnantandeducated/parenting/">分齡談教養</a></li>
+</ul>
+</li>
+<li id="menu-item-74304" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-74304 vce-cat-1"><a href="https://mamaclub.com/learn/category/lifefun/">生活放輕鬆</a>
+<ul class="sub-menu">
+<li id="menu-item-74305" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-74305 vce-cat-123"><a href="https://mamaclub.com/learn/category/lifefun/funforin/">吃喝玩樂趣</a></li>
+<li id="menu-item-74306" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-74306 vce-cat-119"><a href="https://mamaclub.com/learn/category/lifefun/horoscope/">星座與心測</a></li>
+<li id="menu-item-74308" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-74308 vce-cat-4411"><a href="https://mamaclub.com/learn/category/lifefun/funnything/">趣味小品集</a></li>
+<li id="menu-item-560287" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-560287 vce-cat-37864"><a href="https://mamaclub.com/learn/category/lifefun/wow-japan/">窩日本</a></li>
+</ul>
+</li>
+<li id="menu-item-211639" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-211639"><a href="https://mamaclub.com/event/">玩活動</a>
+<ul class="sub-menu">
+<li id="menu-item-526768" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-526768"><a href="https://mamaclub.com/learn/collection/godteammate/">【免費報名】爸媽教室抽好禮</a></li>
+<li id="menu-item-152469" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-152469"><a href="https://mamaclub.com/?p=152383">【媽媽經APP】您手機裡的專屬夥伴</a></li>
+</ul>
+</li>
+<li id="menu-item-86288" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-86288"><a href="https://mamaclub.com/authors/">駐站作家</a>
+<ul class="sub-menu">
+<li id="menu-item-187378" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-187378 vce-cat-5658"><a href="https://mamaclub.com/learn/category/editorschoice/">精選文章</a></li>
+<li id="menu-item-188076" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-188076 vce-cat-5640"><a href="https://mamaclub.com/learn/category/articles/">作家文章</a></li>
+</ul>
+</li>
+<li id="menu-item-91068" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-91068 vce-cat-4772"><a href="https://mamaclub.com/learn/category/video/">媽媽經ＴＶ</a></li>
+<li id="menu-item-74285" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-74285"><a title="MMC_login" href="#">登入/ 註冊</a></li>
+<li id="menu-item-74286" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-74286"><a title="MMC_logout" href="#">登出</a></li>
+<li class="search-header-wrap"><a class="search_header" href="javascript:void(0)"><i class="fa fa-search"></i></a><ul class="search-header-form-ul"><li><form class="search-header-form" action="https://mamaclub.com/" method="get">
+<input name="s" class="search-input" size="20" type="text" value="搜尋大小識，解決媽媽事..." onfocus="(this.value == '搜尋大小識，解決媽媽事...') && (this.value = '')" onblur="(this.value == '') && (this.value = '搜尋大小識，解決媽媽事...')" placeholder="搜尋大小識，解決媽媽事..." />
+</form></li></ul></li></ul></nav> </div>
+</div></header>
+<div id="main-wrapper">
+<style>
+@media only screen and (max-width: 768px){
+    .widget.widget_tag_cloud{
+        display: none;
+        visibility: hidden;
+    }
+}
+/*breadcrumb*/
+.breadcrumb_last{
+  display: none;
+  visibility: hidden;
+}
+article.vce-single{
+    padding-bottom: 15px;
+}
+</style>
+<script>
+    gaClickEvent("200446", "Post", "父母老愛拿這十句話和孩子說嘴|||49530|||11149",1);
+    // gaClickEvent("49530", "Editor", "父母老愛拿這十句話和孩子說嘴",1);
+    // gaClickEvent("11149", "Writer", "父母老愛拿這十句話和孩子說嘴",1);
+</script>
+<div id="content" class="container site-content">
+<div id="categories" class="categories" style="display:none;">
+_4408_23441_ </div>
+<div class="clear"></div>
+
+<script>
+          var googletag = googletag || {};
+          googletag.cmd = googletag.cmd || [];
+        </script>
+<script>
+          googletag.cmd.push(function() {
+            googletag.defineSlot('/187986430/OneAD_IP', [[970, 250], [1, 1], [300, 250]], 'div-gpt-ad-1503282113411-0').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs(1, 1);
+            googletag.enableServices();
+          });
+        </script>
+
+
+<div id="sfpdonly" style="display:none;">
+<div id='div-gpt-ad-1503282113411-0' align="center">
+<script>
+                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1503282113411-0'); });
+                </script>
+</div>
+</div>
+<script>
+            var PDcount=1;
+            var PDIclean=setInterval("checkPD()",1000);
+            function checkPD() {
+                if (PDcount!=10) {
+                    var temp=document.querySelector("iframe[id*=\\/187986430\\/OneAD_IP]");
+                    if (temp.getAttribute("data-load-complete")=="true") {
+                    if (temp.contentWindow.document.querySelector("div>script").innerText.indexOf("definePassback('/7682122/OneAD_IP'")>0) {
+                            if ((temp.contentWindow.document.querySelector("div>div>div") && temp.contentWindow.document.querySelector("div>div>div").childNodes.length>0) || (temp.contentWindow.document.querySelector("div>div>iframe"))) {
+                            temp.parentNode.parentNode.parentNode.style.display="block";
+                        }
+                        } else {
+                        temp.parentNode.parentNode.parentNode.style.display="block";
+                    }
+                    }
+                    PDcount++;
+                } else {
+                    clearInterval(PDIclean);
+                }
+            }
+        </script>
+<div id="primary" class="vce-main-content" style="padding-bottom: 30px;">
+<main id="main" itemprop="articleBody" class="main-box main-box-single">
+<article id="post-200446" class="vce-single post-200446 post type-post status-publish format-standard has-post-thumbnail hentry category-mainia category-pregnantandeducated tag-305 tag-360">
+<header class="entry-header">
+<span id="breadcrumbs"><span xmlns:v="http://rdf.data-vocabulary.org/#"><span typeof="v:Breadcrumb"><a href="https://mamaclub.com/" rel="v:url" property="v:title">首頁</a> » <span rel="v:child" typeof="v:Breadcrumb"><a href="https://mamaclub.com/learn/category/pregnantandeducated/" rel="v:url" property="v:title">懷孕與教養</a> » <span class="breadcrumb_last">父母老愛拿這十句話和孩子說嘴</span></span></span></span></span><script type="text/javascript">
+var lastSpan = jQuery('.breadcrumb_last').closest('span[typeof="v:Breadcrumb"]');
+lastSpan.addClass('last_breadcrumb_span');
+lastSpan.find('a').addClass('last_breadcrumb_link');
+</script> <h1 class="entry-title">父母老愛拿這十句話和孩子說嘴</h1>
+</header>
+<div class="meta-image">
+<img width="810" height="423" src="https://cdn.mamaclub.com/wp-content/uploads/2016/10/20181105-F0702-810x423.jpg" class="attachment-vce-lay-a size-vce-lay-a wp-post-image" alt="呂秋遠：父母老愛拿這十句話和孩子說嘴" />
+</div>
+<div class="meta-author">
+<div class="avatar_box">
+<img src='//cdn.mamaclub.com/wp-content/uploads/avator/mamaclub_authors.jpg' class='avatar avatar-100 photo' height='100' width='100' /> </div>
+<div class="entry-meta">
+<div class="meta-item"><span class="vcard author"><span class="fn"> <a style="color:#dc4776;" href="https://mamaclub.com/learn/author/pu485373/">專欄作家</a></span></span>&nbsp;發表於 2020-02-14&nbsp;</div> </div>
+</div>
+<div class="entry-content">
+<p><span class='wpfp-span'><img src='https://mamaclub.com/wp-content/plugins/wp-favorite-posts/img/star.png?x29673' alt='Favorite' title='Favorite' class='wpfp-img' /><img src='https://mamaclub.com/wp-content/plugins/wp-favorite-posts/img/loading.gif?x29673' alt='Loading' title='Loading' class='wpfp-hide wpfp-img' /><a class='wpfp-link' href='?wpfpaction=add&amp;postid=200446' title='收藏文章' rel='nofollow'>收藏文章</a></span><p>作者＼呂秋遠　律師</p>
+<p><span style="color: #dc4776;"><strong>1.天下無不是的父母：</strong></span><br />
+這是最可惡的一句話。基本上，當父母是需要學習的，沒有人天生就是稱職的父母，甚至有些人根本就不應該是孩子的父母，他們只不過是某天不小心沒做安全措施以後，勉強把孩子生下來而已。<br />
+孩子五歲，父母的年齡就是五歲。父母肯定會犯錯，請時時刻刻反省自己。年紀比較大，說出來的話也不會比較有道理啦！</p>
+<p></p>
+<div class='dfp_ad dfp_center dfp_content_pc' id='div-gpt-ad-1441769123577-3' style='position: relative;left: 50%;margin-left: -364px;'>
+<script type='text/javascript'>
+                        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1441769123577-3'); });
+                        </script>
+</div>
+<p></p><p><span style="color: #dc4776;"><strong>2.女兒是父親的前世情人：</strong></span><br />
+喔！所以呢？這輩子要再續前緣？這句話除了提供父親性侵害女兒的藉口外，我看不出來有任何意義。女兒就是女兒，她不是誰的前世情人。相信這句話的人，怎麼不會相信自己上輩子曾經是空一格孫中山？</p>
+<p><span style="color: #dc4776;"><strong>3.不要讓孩子輸在起跑點上：</strong></span><br />
+贏在起跑點，但是輸在終點又如何？終點是什麼？請告訴孩子，終點就是快樂。不傷害別人的、讓自己內心平靜的快樂。</p>
+<p>況且贏與輸，本來就很難論定。說不定父母眼中的贏，其實是孩子眼中的輸。</p>
+<p><span style="color: #dc4776;"><strong>4.我都是為了你好：</strong></span><br />
+為你好？為你好還是為我好？請不要自以為是的認為，自己的好就是孩子的好，而這當中孩子的好，又有多少是虛榮心作祟，多少是彌補自己無法達成的心願，多少是真的為孩子好？我想只有自己知道。</p>
+<p>為了別人好，而要別人去作自己想做的事，這種嗜好我還真是經常見到。</p>
+<p><span style="color: #dc4776;"><strong>5.不打不成器：</strong></span><br />
+在懲罰孩子前，請先想想，這當中有多少成分是為了滿足自己的權力、多少是為了發洩自己無能為力的怒氣、多少是為了自己生活中的不如意？</p>
+<p>毆打比自己弱小的人，是種無能的表現。如果你也贊同這句話，那麼到底打孩子要做什麼？</p>
+<p><strong>推薦閱讀：<span style="color: #800000;"><a style="color: #800000;" href="https://mamaclub.com/?p=199011" target="_blank" rel="noopener">呂秋遠律師：連法官都不同意！離婚的十個爛藉口</a></span></strong></p>
+<p><span style="color: #dc4776;"><strong>6.家是永遠的避風港：</strong></span><br />
+避風港內遇到暴風雨，船還是會沉的。<br />
+要讓家成為避風港，就要讓孩子知道父母是可以信任的。動輒就用「你就不要給我回來」、「你要是出了事，我一定不負責」、「你不聽話，我就不幫你」，這樣的家，只會把孩子逼向暴風雨，哪來的避風港？</p>
+<p><span style="color: #dc4776;"><strong>7.養兒防老：</strong></span><br />
+人生最悲慘的兩件事，是「死了錢還沒用完」以及「還沒死錢已經用完」。<br />
+所以，做好晚年規劃比較實際，至於兒女，請溫柔的拒絕他們對你的需索，也不要期望他們會給你多少錢。</p>
+<p>要把自己的老年寄託在兒女身上的話，那是假的！你耳朵業障重！</p>
+<p><img class="aligncenter wp-image-198886 size-full" src="https://cdn.mamaclub.com/wp-content/uploads/2016/09/20160926_G0504.jpg" alt="呂秋遠：父母老愛拿這十句話和孩子說嘴" width="750" height="390" /></p>
+<p><span style="color: #dc4776;"><strong>8.窮養兒，貴養女：</strong></span><br />
+這句話的意思，大概是說兒子隨便養，才能激發兒子的動力；女兒要用錢養，才能讓她拒絕男人的誘惑。但是我擔心，這樣下去兒子可能會養不活，女兒可能會有公主病。</p>
+<p>就平等的看待兒子與女兒，很難做到嗎？還是說因為女兒其實是上輩子的情人，所以這輩子要多給一點？</p>
+<p><span style="color: #dc4776;"><strong>9.不孝有三，無後為大：</strong></span><br />
+我是不知道其他兩點是什麼啦，但是，我就不想生、不能生，是不行膩？<br />
+況且很多父母生孩子，也是不小心而已，幹嘛把這種不小心的超能力要求孩子要做到？</p>
+<p><span style="color: #dc4776;"><strong>10.我都是為了這個家：</strong></span><br />
+語畢，哄堂大笑。</p>
+<p>【<a href="https://www.facebook.com/profile.php?id=100000944336615&amp;fref=ts" target="_blank" rel="noopener">呂秋遠</a>】授權轉載</p>
+
+<footer class="entry-footer">
+<div class="meta-tags">
+<a href="https://mamaclub.com/learn/tag/%e5%ae%b6%e5%ba%ad%e6%95%99%e8%82%b2/" rel="tag">家庭教育</a> <a href="https://mamaclub.com/learn/tag/%e6%95%99%e9%a4%8a/" rel="tag">教養</a> 
+</div>
+
+<a id="line_btn_style" href="https://bit.ly/2HTerAm" target="_blank" style="width: 100%;display: flex;justify-content: center;padding-bottom: 0px;padding-top:20px">
+<img src="https://cdn.mamaclub.com/wp-content/uploads/2019/01/Line_03.png" alt="加入媽媽經" style="display: block;width: 65%;height: 100%;">
+</a>
+
+</footer>
+<div>
+</div>
+
+
+<script>
+            var googletag = googletag || {};
+            googletag.cmd = googletag.cmd || [];
+        </script>
+<script>
+            googletag.cmd.push(function() {
+            googletag.defineSlot('/187986430/ad_oneAD_content_PC', [[640, 360], [1, 1], [640, 390]], 'div-gpt-ad-1520407365333-0').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+            });
+        </script>
+<div id='div-gpt-ad-1520407365333-0'>
+<script>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1520407365333-0'); });
+        </script>
+</div>
+<br>
+
+
+
+
+
+<div id="dablewidget_G7Z59joW" data-widget_id="G7Z59joW"><script>(function(d,a,b,l,e,_) {if(d[b]&&d[b].q)return;d[b]=function(){(d[b].q=d[b].q||[]).push(arguments)};e=a.createElement(l);e.async=1;e.charset='utf-8';e.src='//static.dable.io/dist/plugin.min.js';_=a.getElementsByTagName(l)[0];_.parentNode.insertBefore(e,_);})(window,document,'dable','script');dable('setService', 'mamaclub.com');dable('sendLogOnce');dable('renderWidget', 'dablewidget_G7Z59joW');</script></div>
+
+
+<div id="dablewidget_OoRd3Mly" data-widget_id="OoRd3Mly">
+<script>
+                (function(d,a,b,l,e,_) {
+                if(d[b]&&d[b].q)return;d[b]=function(){(d[b].q=d[b].q||[]).push(arguments)};e=a.createElement(l);
+                e.async=1;e.charset='utf-8';e.src='//static.dable.io/dist/plugin.min.js';
+                _=a.getElementsByTagName(l)[0];_.parentNode.insertBefore(e,_);
+                })(window,document,'dable','script');
+                dable('setService', 'mamaclub.com');
+                dable('sendLogOnce');
+                dable('renderWidget', 'dablewidget_OoRd3Mly');
+            </script>
+</div>
+
+
+<div id="_popIn_recommend"></div>
+<script type="text/javascript">
+            (function() {
+                var pa = document.createElement('script'); pa.type = 'text/javascript'; pa.charset = "utf-8"; pa.async = true;
+                pa.src = window.location.protocol + "//api.popin.cc/searchbox/mamaclub.js";
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(pa, s);
+            })();
+        </script>
+<style>._popIn_recommend_art_title{height:auto;}</style>
+
+
+
+<style>
+  .inlineText{
+    float: left;
+    width: 85%;
+    font-weight: bold;
+    margin-left: 20px;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
+   }
+</style>
+<br>
+
+<style>
+/* BEGIN besic */
+#article-survey .pc{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+#article-survey .mb{
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+#article-survey *{
+    -o-transition: all 0.1s ease-in;
+    -webkit-transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+    letter-spacing: 1.4px;
+    font-size: 15px;
+}
+#article-survey.article-survey-container{
+    text-align: center;
+    /*background: rgba(220,71,118,0.02);*/
+    background: rgba(252,102,117,0.05);
+    padding: 5px;
+    border-radius: 8px;
+    cursor: default;
+    margin: 3px 0;
+    display: inline-block;
+    width: 100%;
+}
+#article-survey .as-box{
+    /*border: 2px dashed #dc4776;*/
+    border-radius: 5px;
+    padding: 20px;
+}
+#article-survey .title{
+    /*letter-spacing: 0.1px;*/
+    color: rgba(220,71,118,0.9);
+}
+/* END besic */
+/* BEGIN question */
+#article-survey .as.question{
+}
+#article-survey .as-button, #article-survey .as-button-comment{
+    background-color: rgba(255,255,255,0.95);
+    /*border: 1px solid rgba(0,0,0,0.2);*/
+    /*border: 1px solid rgba(220,71,118,0.25);*/
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px 0 rgba(220,71,118,0.2);
+    display: inline-block;
+    line-height: 15px;
+    margin: 4px 6px 4px 0;
+    min-width: 110px;
+    padding: 8px 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: #444;
+}
+#article-survey .as-button:hover,, #article-survey .as-button-comment:hover{
+    background-image: none;
+    /*background-color: rgba(220,71,118,0.85);*/
+    color: rgba(220,71,118,0.85);
+}
+/* END question */
+/* BEGIN finished */
+#article-survey .as.finished{
+}
+#article-survey .as-progress {
+    height: 25px;
+    overflow-y: visible;
+    overflow-x: auto;
+    background-color: #f5f5f5;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+#article-survey .as-progress-bar {
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 11px;
+    line-height: 20px;
+    color: #000;
+    text-align: center;
+    background-color: #dc4776;
+    border: 1px solid rgba(0,0,0,0.15);
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,0.15);
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,0.15);
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+}
+#article-survey .as-progress-bar:hover{
+    opacity: 0.75;
+}
+#article-survey .as-progress-bar:first-child{
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+}
+#article-survey .as-progress-bar:last-child{
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+}
+#article-survey .as-progress-bar-percent{
+    font-size: 13px;
+}
+#article-survey .as-progress-out{
+    top: -5px;
+    position: relative;
+    line-height: 1rem;
+    display: inline-block;
+    width: 100%;
+}
+#article-survey .as-related{
+    text-align: left;
+    font-size: 14px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 5px 0;
+}
+#article-survey .as-related-ul{
+    list-style: none;
+}
+#article-survey .as-related-ul-li{
+    /*opacity: 0;*/
+    width: 100%;
+}
+#article-survey .as-related-ul-li i{
+    font-size: 13px;
+    color: rgba(220,71,118,0.9);
+    text-indent: -1rem;
+    -o-transition: all 0.2s ease 0.1s;
+    -webkit-transition: all 0.2s ease 0.1s;
+    -moz-transition: all 0.2s ease 0.1s;
+    transition: all 0.2s ease 0.1s;
+}
+#article-survey .as-related-ul-li-a{
+    color: #444;
+    text-align: justify;
+}
+#article-survey .as-related-ul-li:hover,
+#article-survey .as-related-ul-li-a:hover{
+    color: rgba(220,71,118,0.7);
+}
+#article-survey .as-related-ul-li,
+#article-survey .as-related-ul-li div{
+    display: inline-block;
+}
+#article-survey .as-related-ul-li div:first-child{
+    width: 5%;
+}
+#article-survey .as-related-ul-li div:last-child{
+    width: 95%;
+}
+/* END finished */
+@media (min-width: 1200px){}
+@media only screen and (max-width: 1100px){
+    #article-survey .as-related{
+        width: 75%;
+    }
+}
+@media only screen and (max-width: 768px){
+    #article-survey .pc{
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+    }
+    #article-survey .mb{
+        display: block;
+        visibility: visible;
+        opacity: 1;
+    }
+    #article-survey *{
+        font-size: 17px;
+        letter-spacing: 0.4px;
+    }
+    #article-survey .as-box{
+        padding: 9px 20px;
+    }
+    #article-survey .as-button, #article-survey .as-button-comment{
+        min-width: 105px;
+        padding: 9px 0;
+    }
+    #article-survey .as-related{
+        width: 95%;
+    }
+    #article-survey .as-related-ul-li-a{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 670px) and (min-width: 200px){}
+@media only screen and (max-width: 414px){}
+@media only screen and (max-width: 375px){}
+@media only screen and (max-width: 320px){}
+@media only screen and (max-width: 1024px) and (max-height: 768px){ /** ipad mini 橫 **/ }
+@media only screen and (max-width: 768px) and (max-height: 1024px){ /** ipad mini 直 **/ }
+@media only screen and (max-width: 600px) and (max-height: 960px){ /** nexus7 **/ }
+@media only screen and (max-width: 414px) and (max-height: 736px){ /** i6plus **/ }
+@media only screen and (max-width: 375px) and (max-height: 627px){ /** i6 **/ }
+@media only screen and (max-width: 384px) and (max-height: 567px){ /** nexus4 **/ }
+@media only screen and (max-width: 360px) and (max-height: 567px){ /** nexus5 **/ }
+@media only screen and (max-width: 320px) and (max-height: 568px){ /** i5 **/ }
+@media only screen and (max-width: 320px) and (max-height: 480px){ /** i4 **/ }
+/* BEGIN extra */
+#article-survey .float-left{
+    float: left;
+}
+#article-survey .float-right{
+    float: right;
+}
+#article-survey .display-none{
+    display: none;
+}
+#article-survey .text-center{
+    text-align: center;
+}
+#article-survey .text-left{
+    text-align: left;
+}
+#article-survey .text-right{
+    text-align: right;
+}
+#article-survey .text-justify{
+    text-align: justify;
+}
+#article-survey .color-dc4776{
+    color: rgba(220,71,118,0.9);
+}
+/* END extra */
+/* BEGIN Comment */
+/* .squaredFour */
+.squaredFour {
+  width: 20px;
+  position: relative;
+  margin: 20px 0px 0px 20px;
+  display: inline;
+}
+.squaredFour label {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fcfff4;
+  background: -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+  background: linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+  border-radius: 4px;
+  box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.squaredFour label:after {
+  content: '';
+  width: 9px;
+  height: 5px;
+  position: absolute;
+  top: 6px;
+  left: 5px;
+  border: 3px solid #333;
+  border-top: none;
+  border-right: none;
+  background: transparent;
+  opacity: 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.squaredFour label:hover::after {
+  opacity: 0;
+}
+.squaredFour input[type=checkbox] {
+  visibility: hidden;
+  width: 20px;
+  height: 20px;
+  margin-top: 15px;
+  border-top-width: 0px;
+}
+.squaredFour input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+/* end .squaredFour */
+/* END Comment */
+</style> <div id="article-survey" class="article-survey-container">
+<div class="as-box">
+<div class="as question pc">
+<div class="title">這篇文章對您是否有幫助？</div>
+<button type="button" class="as-button ga-trace" data-value="Y" ga-action="點選有幫助-200446" ga-category="" ga-label="這篇文章是否有幫助">是</button>
+<button type="button" class="as-button ga-trace" data-value="N" ga-action="點選沒幫助-200446" ga-category="" ga-label="這篇文章是否有幫助">否</button>
+</div>
+<div class="as question mb">
+<div class="title">這篇文章對您是否有幫助？</div>
+<button type="button" class="as-button ga-trace" data-value="N" ga-action="點選沒幫助-200446" ga-category="" ga-label="這篇文章是否有幫助">否</button>
+<button type="button" class="as-button ga-trace" data-value="Y" ga-action="點選有幫助-200446" ga-category="" ga-label="這篇文章是否有幫助">是</button>
+<button type="button" class="as-button-comment ga-trace" id="comment-jump" ga-action="點擊跳轉留言按鈕" ga-category="" ga-label="快速留言模組" style="min-width: 220px;color: #444;margin-top: 10px; display: none;" onclick='loginToRedirect();'>快來分享妳的看法！</button>
+</div>
+<div class="as finished display-none">
+<div class="title color-dc4776" id="survey_response">感謝您提供寶貴的意見！</div>
+<div class="as-progress">
+<div class="as-progress-bar choice-no" data-value="[SURVEY-N]"><span clss="magic-number" magic-num="[SURVEY-N]">[SURVEY-N]</span><span class="as-progress-bar-percent">%</span>沒幫助</div>
+<div class="as-progress-bar choice-yes" data-value="[SURVEY-Y]"><span clss="magic-number" magic-num="[SURVEY-Y]">[SURVEY-Y]</span><span class="as-progress-bar-percent">%</span>有幫助</div>
+</div>
+<div class="as-progress-out">
+<span class="as-progress-bar-percent float-left"><span class="magic-number" magic-num="[SURVEY-Y]">[SURVEY-Y]</span>%</span>
+<span class="as-progress-bar-percent float-right"><span class="magic-number" magic-num="[SURVEY-N]">[SURVEY-N]</span>%</span>
+</div>
+<div class="as-related">
+
+<ul class="as-related-ul">
+<li class="as-related-ul-li"><div class="text-center float-left"><i class="fa fa-caret-right"></i></div><div class="text-left"><a href="https://mamaclub.com/?p=212616&utm_source=allen&utm_medium=survey_help&utm_content=212616-對付外人插手管教，媽媽要有被討厭的準備！&utm_campaign=200446-父母老愛拿這十句話和孩子說嘴" class="as-related-ul-li-a ga-trace" ga-action="點選這些文章也有幫助-212616" ga-category="" ga-label="這篇文章是否有幫助">對付外人插手管教，媽媽要有被討厭的準備！</a></div></li><li class="as-related-ul-li"><div class="text-center float-left"><i class="fa fa-caret-right"></i></div><div class="text-left"><a href="https://mamaclub.com/?p=91152&utm_source=allen&utm_medium=survey_help&utm_content=91152-沒有教不好的小孩，只有不懂教的家長？&utm_campaign=200446-父母老愛拿這十句話和孩子說嘴" class="as-related-ul-li-a ga-trace" ga-action="點選這些文章也有幫助-91152" ga-category="" ga-label="這篇文章是否有幫助">沒有教不好的小孩，只有不懂教的家長？</a></div></li><li class="as-related-ul-li"><div class="text-center float-left"><i class="fa fa-caret-right"></i></div><div class="text-left"><a href="https://mamaclub.com/?p=602507&utm_source=allen&utm_medium=survey_help&utm_content=602507-從溜滑梯插刀片事件，看親子教育的兩大重點&utm_campaign=200446-父母老愛拿這十句話和孩子說嘴" class="as-related-ul-li-a ga-trace" ga-action="點選這些文章也有幫助-602507" ga-category="" ga-label="這篇文章是否有幫助">從溜滑梯插刀片事件，看親子教育的兩大重點</a></div></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="comment-fast-area mb" id="comment-fast-area" style="border-top: 1px solid rgba(0,0,0,0.1); padding: 9px;position: fixed; bottom: 0px;height: 61px; width: 100%; left: 0; bottom: 0; z-index: 10239;background: white; display: none;">
+<div class="ga-trace" ga-action="點擊快速留言框框 - 未登入" ga-category="" ga-label="快速留言模組" style="display: inline-block; width: 83%;padding:0px;height: 100%;vertical-align: middle;">
+<textarea id="comment-fast-input" placeholder="點我登入快速留言！" onclick='loginToRedirect();' style="height:100%; padding: 0px; line-height: 40px; font-size: 15px;padding-left: 5px;"></textarea>
+</div>
+<div class="ga-trace" ga-action="點擊快速留言按鈕 - 未登入" ga-category="" ga-label="快速留言模組" style="display: inline-block; width: 15%; background: #dc4776; border-radius: 4px; color: #fff; box-shadow: 0 1px 0 rgba(0, 0, 0, .14), inset 0 -1px 1px 0 rgba(0,0,0,.03); text-align: center;">
+<span class="" style="text-align: center; color: #fff;height: 40px; line-height: 40px; text-shadow: 0 -1px rgba(0, 0, 0, .25); -webkit-overflow-scrolling: touch; font-size: 15px !important;" onclick='loginToRedirect();'>送出</span>
+</div>
+</div>
+
+<div class="campaign_div" id="comment_input_area" style="display:none; position: absolute; top:0px">
+<div class="inner" style="min-height: 320px;">
+<span class="btn_close ga-trace" ga-action="點擊關閉按鈕" ga-category="" ga-label="快速留言模組" style="width: 36px; opacity: 0.8;"><img alt="close" title="close this windows" src="https://cdn.mamaclub.com/wp-content/plugins/CampaignView/images/close_btn.png" /></span>
+<div class="clear"></div>
+<div class="box_0">
+<textarea id="comment-fast-textarea" placeholder="點我登入快速留言！" onfocusout="inputFocusout();" style="height:200px; width:100%; padding: 20px; line-height: 25px; font-size: 19px;border-radius: 0px; border-color: #EEE; z-index: 2;"></textarea>
+<div class="squaredFour" style="z-index: 2;">
+<input id="comment_fast_anonymous" type="checkbox" onclick="jQuery('#mmc_comment_anonymous input').trigger('click');" value="1" />
+<label class="comment_anonymous" for="comment_fast_anonymous"></label>
+</div><span>我要匿名</span>
+<div class="ga-trace" ga-action="點擊快速留言送出按鈕" ga-category="" ga-label="快速留言模組" id="comment-fast-submit" style="margin:10px; width: 90%; background: #dc4776; border-radius: 4px; color: #fff; box-shadow: 0 1px 0 rgba(0, 0, 0, .14), inset 0 -1px 1px 0 rgba(0,0,0,.03); text-align: center;">
+<span class="" style="text-align: center; color: #fff;height: 10%; line-height: 40px; text-shadow: 0 -1px rgba(0, 0, 0, .25); -webkit-overflow-scrolling: touch; font-size: 15px !important; z-index: 2;">送出</span>
+</div>
+</div>
+</div>
+<div class="overlap"></div>
+</div>
+
+<div class="campaign_div" id="comment_success_area" style="display:none; position: fixed; top:0px">
+<div class="inner" style="min-height: 320px;">
+<span class="btn_close ga-trace" ga-action="點擊留言成功後關閉按鈕" ga-category="" ga-label="快速留言模組" style="width: 36px; opacity: 0.8;"><img alt="close" title="close this windows" src="https://cdn.mamaclub.com/wp-content/plugins/CampaignView/images/close_btn.png" /></span>
+<div class="clear"></div>
+<div align="center" class="box_0">
+<div id="comment-success-textarea" style="height: 200px; width: 100%; padding: 20px; line-height: 179px; font-size: 29px; text-align: center;">恭喜！留言成功！</div>
+<div class="ga-trace" ga-action="點擊看看其他人的留言回覆按鈕" ga-category="" ga-label="快速留言模組" style="margin:10px; width: 90%; background: #dc4776; border-radius: 4px; color: #fff; box-shadow: 0 1px 0 rgba(0, 0, 0, .14), inset 0 -1px 1px 0 rgba(0,0,0,.03); text-align: center;" onclick="jQuery('#comment_success_area').hide();jQuery('body').scrollTop(jQuery('#comments').offset().top-150);">
+<span class="" style="text-align: center; color: #fff;height: 10%; line-height: 40px; text-shadow: 0 -1px rgba(0, 0, 0, .25); -webkit-overflow-scrolling: touch; font-size: 15px !important;">看看其他人的留言回覆！</span>
+</div>
+<div class="ga-trace" ga-action="點擊看看大家都在討論啥按鈕" ga-category="" ga-label="快速留言模組" style="margin:10px; width: 90%; background: #dc4776; border-radius: 4px; color: #fff; box-shadow: 0 1px 0 rgba(0, 0, 0, .14), inset 0 -1px 1px 0 rgba(0,0,0,.03); text-align: center;" onclick="jQuery('#comment_success_area').hide();jQuery('body').scrollTop(jQuery('.main-box.author-box .followUi').offset().top-350);">
+<span class="" style="text-align: center; color: #fff;height: 10%; line-height: 40px; text-shadow: 0 -1px rgba(0, 0, 0, .25); -webkit-overflow-scrolling: touch; font-size: 15px !important;">想要追蹤這篇文章的作者嗎？</span>
+</div>
+</div>
+</div>
+<div class="overlap"></div>
+</div>
+
+<div id="loading-bg" style="display: none; width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 10241;">
+<div style="opacity: 0.6; background-color: #FFF; width: 100%; height: 100%; position: fixed; top: 0; left: 0;"></div>
+<div class='spinner'></div>
+</div>
+<script>
+            var article_survey = {"Y":13, "N":0};var article_survey_id=200446;var survey_ques_id = 1;
+            function inputFocusout(){
+                if(jQuery('#comment_input_area').css('display') == "block"){
+                    var top = (jQuery(window).scrollTop() == 0)?1:0;
+                    jQuery('body').scrollTop(top);
+                }
+            }
+            var commentInputAreaShowed = false;//輸入框框已顯示
+            var commentFastAreaShowed = false;//快速輸入框框已顯示
+            jQuery('#comment-fast-submit').on('click', function(){
+                var comment_text = jQuery('#comment-fast-textarea').val();
+                if(comment_text.length > 0){
+                    jQuery('#comment').val(comment_text);
+                    jQuery('#commentform .form-submit #submit').trigger('click');
+                    jQuery.cookie( "comment-fast-area", '' );
+                    jQuery.cookie( "mmc-comment-success", "yes" );
+                    jQuery('#loading-bg').show();
+                    jQuery('#comment_input_area').hide();
+                    commentInputAreaShowed = false;
+                }else{
+                    alert('請輸入留言內容！');
+                }
+            });
+            jQuery('#commentform').submit(function(){
+                if(jQuery('#comment').val().length > 0 ){
+                    return true;
+                }else{
+                    return false;
+                }
+            });
+            jQuery(document).ready(function(){
+                var commentIsSuccess = jQuery.cookie( "mmc-comment-success");
+                if( (typeof commentIsSuccess != "undefined") && (commentIsSuccess == "yes") ){
+                    //留言成功後跳轉到作者區塊，
+                    jQuery('body').scrollTop(commentIsSuccess);
+                    jQuery.cookie( "mmc-comment-success", '' );
+                    jQuery(document).ready(function(){
+                        jQuery('#comment_success_area').show();
+                        jQuery('#comment_success_area .btn_close').on('click', function(){
+                            jQuery('#comment_success_area').hide();
+                        });
+                    });
+                }
+            });
+            function commentInputAreaShow(){
+                jQuery('#comment_input_area').show();
+                jQuery('#comment_input_area .btn_close').on('click', function(){
+                    var top = jQuery.cookie( "comment-fast-area");
+                    jQuery('body').scrollTop(top);
+                    jQuery('#comment_input_area').hide();
+                });
+                jQuery.cookie( "comment-fast-area", jQuery(window).scrollTop() );
+                jQuery('body').scrollTop(0);
+                jQuery('#comment_input_area .overlap').css('height', jQuery(document).height()+"px");
+                jQuery('#comment-fast-textarea').focus();
+                commentInputAreaShowed = true;
+            }
+            function surveyScrollIn(elem){
+                var docViewTop = jQuery(window).scrollTop();
+                var docViewBottom = docViewTop+jQuery(window).height();
+                if(jQuery(elem).length <= 0){ return false;}
+                var elemTop = jQuery(elem).offset().top;
+                return (docViewBottom >= elemTop);
+            }
+            function surveyScrollOut(elem){
+                var docViewTop = jQuery(window).scrollTop();
+                if(jQuery(elem).length <= 0){ return false;}
+                var elemTop = jQuery(elem).offset().top;
+                return (docViewTop >= elemTop);
+            }
+            jQuery(window).scroll(function() {
+                clearTimeout(jQuery.data(this, 'cmtfloatWindowScrollTimer'));
+                jQuery.data(this, 'cmtfloatWindowScrollTimer', setTimeout(function() {
+                    if( jQuery('#tryout-frame-m').length <= 0 && (jQuery('#respond').length > 0 ) && !commentInputAreaShowed ){
+                        if( surveyScrollOut("#div-gpt-ad-1441768117292-0") ){
+                            jQuery('#btm_promote_box .promote_content').css('bottom','70px');
+                            jQuery('#comment-fast-area').slideDown(450);
+                            commentFastAreaShowed = true;
+                        }else{
+                            jQuery('#comment-fast-area').slideUp(450);
+                            commentFastAreaShowed = false;
+                            jQuery('#btm_promote_box .promote_content').css('bottom','40px');
+                        }
+                    }else if(commentInputAreaShowed){
+                        jQuery('#comment-fast-textarea').focus();
+                    }
+                }, 20));
+            });
+        </script>
+
+<style>
+        /* BEGIN besic */
+        #chat-match *{
+            -o-transition: all 0.1s ease-in;
+            -webkit-transition: all 0.1s ease-in;
+            -moz-transition: all 0.1s ease-in;
+            transition: all 0.1s ease-in;
+            letter-spacing: 1.4px;
+            font-size: 15px;
+        }
+        #chat-match.chat-match-container{
+            text-align: center;
+            /*background: rgba(220,71,118,0.02);*/
+            background: rgba(224, 206, 224,0.2);
+            padding: 5px;
+            border-radius: 8px;
+            cursor: default;
+            /*margin: 0 10px;*/
+            margin: 5px 0;
+            display: inline-block;
+            width: 100%;
+        }
+        #chat-match .cm-box{
+            /*border: 2px dashed #dc4776;*/
+            border-radius: 5px;
+            padding: 20px;
+        }
+        #chat-match .title{
+            /*letter-spacing: 0.1px;*/
+            color: rgba(76,20,94,0.9);
+        }
+        /* END besic */
+        /* BEGIN cm-list */
+        #chat-match .cm-list-box{
+            width: 80%;
+            margin: 0 auto;
+        }
+        #chat-match .cm-list{
+            text-align: left;
+            list-style: none;
+            padding: 5px 0;
+        }
+        #chat-match .cm-list-item{
+            width: 100%;
+        }
+        #chat-match .cm-list-item i{
+            font-size: 13px;
+            color: rgba(76,20,94,0.9);
+            text-indent: -1rem;
+            -o-transition: all 0.2s ease 0.1s;
+            -webkit-transition: all 0.2s ease 0.1s;
+            -moz-transition: all 0.2s ease 0.1s;
+            transition: all 0.2s ease 0.1s;
+        }
+        #chat-match .cm-list-item-a{
+            color: #444;
+            text-align: justify;
+        }
+        #chat-match .cm-list-item:hover,
+        #chat-match .cm-list-item-a:hover{
+            color: rgba(76,20,94,0.7);
+        }
+        #chat-match .cm-list-item,
+        #chat-match .cm-list-item div{
+            display: inline-block;
+        }
+		#chat-match .cm-list-item div:first-child{
+			width: 5%;
+		}
+		#chat-match .cm-list-item div:last-child{
+			width: 95%;
+		}
+        /* END cm-list */
+        @media (min-width: 1200px){}
+        @media only screen and (max-width: 1100px){
+            #chat-match .cm-list-box{
+                width: 75%;
+            }
+        }
+        @media only screen and (max-width: 768px){
+            #chat-match *{
+                font-size: 17px;
+                letter-spacing: 0.4px;
+            }
+            #chat-match .cm-box{
+                padding: 25px 20px;
+            }
+            #chat-match .cm-list-box{
+                width: 95%;
+            }
+            #chat-match .cm-list-item{
+                line-height: 27px;
+            }
+            #chat-match .cm-list-item-a{
+                font-size: 16px;
+            }
+        }
+        @media only screen and (max-width: 670px) and (min-width: 200px){}
+        @media only screen and (max-width: 414px){}
+        @media only screen and (max-width: 375px){}
+        @media only screen and (max-width: 320px){}
+        @media only screen and (max-width: 1024px) and (max-height: 768px){ /** ipad mini 橫 **/ }
+        @media only screen and (max-width: 768px) and (max-height: 1024px){ /** ipad mini 直 **/ }
+        @media only screen and (max-width: 600px) and (max-height: 960px){ /** nexus7 **/ }
+        @media only screen and (max-width: 414px) and (max-height: 736px){ /** i6plus **/ }
+        @media only screen and (max-width: 375px) and (max-height: 627px){ /** i6 **/ }
+        @media only screen and (max-width: 384px) and (max-height: 567px){ /** nexus4 **/ }
+        @media only screen and (max-width: 360px) and (max-height: 567px){ /** nexus5 **/ }
+        @media only screen and (max-width: 320px) and (max-height: 568px){ /** i5 **/ }
+        @media only screen and (max-width: 320px) and (max-height: 480px){ /** i4 **/ }
+        /* BEGIN extra */
+        #chat-match .float-left{
+            float: left;
+        }
+        #chat-match .float-right{
+            float: right;
+        }
+        #chat-match .text-center{
+            text-align: center;
+        }
+        #chat-match .text-left{
+            text-align: left;
+        }
+        #chat-match .text-right{
+            text-align: right;
+        }
+        #chat-match .text-justify{
+            text-align: justify;
+        }
+        #chat-match .display-none{
+            display: none;
+        }
+        /* END extra */
+    </style>
+<div id="chat-match" class="chat-match-container">
+<div class="cm-box">
+<div class="title">大家都在討論</div>
+<div class="cm-list-box">
+<ul class="cm-list">
+<li class="cm-list-item">
+<div class="text-center float-left">
+<i class="fa fa-caret-right"></i>
+</div>
+<div class="text-left">
+<a href="https://mamaclub.com/chat/forum.php?mod=viewthread&tid=38247&utm_source=siwei&utm_medium=post2chat&utm_content=38247-眼尾下置術改善眼尾上揚（鳳眼）問題？&utm_campaign=200446-父母老愛拿這十句話和孩子說嘴" class="cm-list-item-a ga-trace" ga-action="點選大家都在討論-眼尾下置術改善眼尾上揚（鳳眼）問題？-200446" ga-category="" ga-label="大家都在討論">眼尾下置術改善眼尾上揚（鳳眼）問題？</a>
+</div>
+</li>
+<li class="cm-list-item">
+<div class="text-center float-left">
+<i class="fa fa-caret-right"></i>
+</div>
+<div class="text-left">
+<a href="https://mamaclub.com/chat/forum.php?mod=viewthread&tid=36823&utm_source=siwei&utm_medium=post2chat&utm_content=36823-極線音波拉皮術後會腫痛嗎？台北有無推薦的診所？&utm_campaign=200446-父母老愛拿這十句話和孩子說嘴" class="cm-list-item-a ga-trace" ga-action="點選大家都在討論-極線音波拉皮術後會腫痛嗎？台北有無推薦的診所？-200446" ga-category="" ga-label="大家都在討論">極線音波拉皮術後會腫痛嗎？台北有無推薦的診所？</a>
+</div>
+</li>
+<li class="cm-list-item">
+<div class="text-center float-left">
+<i class="fa fa-caret-right"></i>
+</div>
+<div class="text-left">
+<a href="https://mamaclub.com/chat/forum.php?mod=viewthread&tid=38250&utm_source=siwei&utm_medium=post2chat&utm_content=38250-鼻子過敏舒緩什麼方法有效呢?...家中寶貝鼻子過敏嚴重&utm_campaign=200446-父母老愛拿這十句話和孩子說嘴" class="cm-list-item-a ga-trace" ga-action="點選大家都在討論-鼻子過敏舒緩什麼方法有效呢?...家中寶貝鼻子過敏嚴重-200446" ga-category="" ga-label="大家都在討論">鼻子過敏舒緩什麼方法有效呢?...家中寶貝鼻子過敏嚴重</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<script>
+        jQuery( "#chat-match .cm-list-item" ).each(function(){
+            jQuery(this).mouseover(function() {
+                jQuery(this).find('i').css({
+                    'text-indent': '0.5rem',
+                })
+            });
+            jQuery(this).mouseout(function() {
+                jQuery(this).find('i').css({
+                    'text-indent': '-1rem',
+                })
+            });
+        });
+    </script>
+
+</div>
+<div class='dfp_ad_div' align='center'>
+<div style='display:inline-block !important;'>
+<div class='dfp_ad dfp_inline' id='div-gpt-ad-1441769123577-5' style='height:280px; width:336px;display:inline-block !important;'>
+<script type='text/javascript'>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1441769123577-5'); });
+                </script>
+</div>
+</div>
+<div class='dfp_ad_div' style='display:inline-block !important;'>
+<div class='dfp_ad dfp_inline' id='div-gpt-ad-1441769123577-13' style='height:280px; width:336px;display:inline-block !important;'>
+<script type='text/javascript'>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1441769123577-13'); });
+                </script>
+</div>
+</div>
+</div><style type="text/css">
+    #postBoxCount iframe{
+        max-width: initial;
+    }
+</style>
+<table id="post_share" style="margin-bottom: 50px;">
+<tr>
+<td>
+<div class="fb-like" data-href="https://www.facebook.com/mamaclub.tw" data-layout="box_count" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+</td>
+<td>
+<div id="postBoxCount" class="fb-like" data-href="https://mamaclub.com/?p=200446" data-layout="box_count" data-action="recommend" data-size="large" data-show-faces="true" data-share="true"></div>
+</td>
+<td>
+<div id="post_collect" class="post_share_btn">
+<div class="inside-collect">
+<a class="trace_login" place="收藏文章" href="javascript: void(0)" onclick="pressCollect();">
+<img title="收藏文章" alt="收藏文章" src="//mamaclub.com/wp-content/themes/voice/images/share-icon/collect-big.png?x29673">
+</a>
+</div>
+</div>
+</td>
+<td>
+<div id="post_chat" class="post_share_btn">
+<div class="inside-chat">
+<a href="https://mamaclub.com/chat/" target="_blank">
+<img title="談心" alt="來談心" src="//mamaclub.com/wp-content/themes/voice/images/share-icon/chat-big.png?x29673">
+</a>
+</div>
+</div>
+</td>
+<td>
+<div id="post_line" class="post_share_btn pc">
+<div class="inside-line">
+<a href="https://mamaclub.com/line">
+<img style="height: 42px;" title="line@" alt="line@" src="https://biz.line.naver.jp/line_business/img/btn/addfriends_zh-Hant.png">
+</a>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</article> 
+<script>
+        var unruly = window.unruly || {};
+        unruly.native = unruly.native || {};
+        unruly.native.siteId = 1076548;
+        </script>
+<script src="//video.unrulymedia.com/native/native-loader.js"></script>
+
+<script>jQuery('.single #primary .meta-author .author').on('click',function(){location.href = jQuery('#primary .vcard.author .fn a').attr('href');});jQuery('.single #primary .meta-author_stop').css('cursor','pointer');var avatorImg = jQuery('.single #primary .meta-author img.avatar'); </script>
+</main>
+<script>
+            jQuery(document).ready(function(){
+                var ssoData = jQuery.cookie('ssoData');
+                if(typeof(ssoData) != 'undefined' && ssoData !== null && ssoData != '') {
+                }
+                var trialCheckTimer = setInterval(function(){
+                    var ssoData = jQuery.cookie('ssoData');
+                    if(typeof(ssoData) != 'undefined' && ssoData !== null && ssoData != '' && mmc_trace_id > 0 && parent==top) {
+                        jQuery.cookie('ssoData','',{ path:"/", expires: -1 });
+                        jQuery('#tryout_btn_link').trigger('click');
+                        clearTrialCheckTimer();
+                    }
+                }, 1000);
+                function clearTrialCheckTimer(){
+                    clearInterval(trialCheckTimer);
+                }
+                jQuery('#popup_form_div .overlap').css('height',jQuery('body').height()+"px");
+            });
+        </script>
+<style>
+    .data-image .follow_msg{
+		display: block;
+		text-align: center;
+		font-size: 14px;
+		color: gray;
+		margin-top: 5px;
+    }
+    .data-image .follow_msg .follow_num{
+		font-size: 21px;
+	    color: #333;
+	    padding: 0 2px;
+	    letter-spacing: 0.5px;
+    }
+</style>
+<section class="main-box mbt-border-top author-box">
+<h3 class="main-box-title">關於作者</h3>
+<div class="main-box-inside">
+<div class="data-image">
+<a href="https://mamaclub.com/learn/author/pu485373/">
+<img src='//cdn.mamaclub.com/wp-content/uploads/avator/mamaclub_authors.jpg' class='avatar avatar-100 photo' height='100' width='100' /> </a>
+<span class="follow_msg"><span class="follow_num">1,527</span>個追蹤</span> </div>
+<div class="data-content">
+<a href="https://mamaclub.com/learn/author/pu485373/"><h4 class="author-title">專欄作家</h4></a>
+<div class="data-entry-content">
+<p>想投稿想分享，媽媽經專欄作家換你當!</p>
+</div>
+</div>
+</div>
+<div class="vce-content-outside">
+<div class="data-links">
+<a href="https://mamaclub.com/learn/author/pu485373/" class="vce-author-link vce-button">檢視作者</a>
+</div>
+<div class="data-links">
+<style>
+    .authorFollow[type='checkbox']:not(:checked),
+    .authorFollow[type='checkbox']:checked {
+        position: absolute;
+        left: -9999px;
+    }
+    .authorFollow[type='checkbox']:not(:checked) + label.authorFollowLabel,
+    .authorFollow[type='checkbox']:checked + label.authorFollowLabel {
+        position: relative;
+        padding-left: 130px;
+        cursor: pointer;
+    }
+    .authorFollow[type='checkbox']:not(:checked) + label.authorFollowLabel:before,
+    .authorFollow[type='checkbox']:checked + label.authorFollowLabel:before,
+    .authorFollow[type='checkbox']:not(:checked) + label.authorFollowLabel:after,
+    .authorFollow[type='checkbox']:checked + label.authorFollowLabel:after {
+        content: '';
+        position: absolute;
+    }
+    .authorFollow[type='checkbox']:not(:checked) + label.authorFollowLabel:before,
+    .authorFollow[type='checkbox']:checked + label.authorFollowLabel:before {
+        left:0;
+        width: 130px;
+        height: 32px;
+        background: #dc4776;
+        border-radius: 3px;
+        transition: background-color .2s;
+    }
+    .authorFollow[type='checkbox']:not(:checked) + label.authorFollowLabel:hover:before{
+        background-image: -moz-linear-gradient(left, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.1) 100%);
+        background-image: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0.1)), color-stop(100%,rgba(0,0,0,0.1)));
+        background-image: -webkit-linear-gradient(left, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.1) 100%);
+        background-image: -o-linear-gradient(left, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.1) 100%);
+        background-image: -ms-linear-gradient(left, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.1) 100%);
+        background-image: linear-gradient(to right, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a000000', endColorstr='#1a000000',GradientType=1 );
+    }
+    .authorFollow[type='checkbox']:not(:checked) + label.authorFollowLabel:after,
+    .authorFollow[type='checkbox']:checked + label.authorFollowLabel:after {
+        width: 21px;
+        height: 21px;
+        transition: all .2s;
+        border-radius: 50%;
+        top: 3px;
+        left: 5px;
+        color: #fff;
+    }
+    .author-box .authorFollow[type='checkbox']:not(:checked) + label.authorFollowLabel:after,
+    .author-box .authorFollow[type='checkbox']:checked + label.authorFollowLabel:after{
+        top: 1px;
+    }
+    /* on checked */
+    .authorFollow[type='checkbox']:checked + label.authorFollowLabel:before {
+        background: #fff;
+        border: 1px dotted #dc4776;
+    }
+    .authorFollow[type='checkbox']:checked + label.authorFollowLabel:after {
+        background: #dc4776;
+        left: 100px;
+        color: #fff;
+        font-family: fontawesome;
+        line-height: 21px;
+        content: "\f00c";
+        text-align: center;
+    }
+    .authorFollow[type='checkbox']:checked + label.authorFollowLabel .followUi,
+    .authorFollow[type='checkbox']:not(:checked) + label.authorFollowLabel .followUi:before,
+    .authorFollow[type='checkbox']:checked + label.authorFollowLabel .followUi:after {
+        position: absolute;
+        left: 38px;
+        width: 58px;
+        color: #fff;
+        border-radius: 15px;
+        font-size: 14px;
+        line-height: 32px;
+        transition: all .2s;
+    }
+    .authorFollow[type='checkbox']:not(:checked) + label.authorFollowLabel .followUi:before {
+        content: '追蹤作者';
+    }
+    .authorFollow[type='checkbox']:checked + label.authorFollowLabel .followUi:after {
+        content: '取消追蹤';
+        color: #dc4776;
+        left: -8px;
+    }
+    .authorFollow[type='checkbox']:focus + label.authorFollowLabel:before {
+        box-sizing: border-box;
+    }
+    @media (min-width: 1200px){
+    }
+    @media only screen and (max-width: 1100px){
+    }
+    @media only screen and (max-width: 768px){
+        .data-links{
+            display: inline-block;
+            width: 100px;
+            margin-left: -12px;
+        }
+        .data-links a{
+            min-width: 100px;
+        }
+        .author-box .data-links{
+            margin-left: 0;
+            margin-bottom: 0;
+        }
+        .author-box .authorFollow[type='checkbox']:not(:checked) + label.authorFollowLabel:after,
+        .author-box .authorFollow[type='checkbox']:checked + label.authorFollowLabel:after{
+            top: 3px;
+        }
+        .author-box .vce-author-links{
+            display: none;
+        }
+        .authorFollow[type='checkbox']:not(:checked) + label.authorFollowLabel:before,
+        .authorFollow[type='checkbox']:checked + label.authorFollowLabel:before{
+            width: 100px;
+        }
+        .authorFollow[type='checkbox']:checked + label.authorFollowLabel .followUi,
+        .authorFollow[type='checkbox']:not(:checked) + label.authorFollowLabel .followUi:before,
+        .authorFollow[type='checkbox']:checked + label.authorFollowLabel .followUi:after{
+            left: 21px;
+        }
+        .authorFollow[type='checkbox']:checked + label.authorFollowLabel .followUi:after{
+            left: -10px;
+        }
+        .authorFollow[type='checkbox']:checked + label.authorFollowLabel:after{
+            left: 73px;
+            top: 3px;
+        }
+        .authorFollow[type='checkbox']:not(:checked) + label.authorFollowLabel:hover:before{
+            background-image: none;
+        }
+        .authorFollow[type='checkbox']:not(:checked) + label.authorFollowLabel,
+        .authorFollow[type='checkbox']:checked + label.authorFollowLabel{
+            padding-left: 100px;
+        }
+    }
+    @media only screen and (max-width: 670px) and (min-width: 200px){
+    }
+    @media only screen and (max-width: 414px){
+    }
+    @media only screen and (max-width: 375px){
+    }
+    @media only screen and (max-width: 320px){
+    }
+    @media only screen and (max-width: 1024px) and (max-height: 768px){ /** ipad mini 橫向 **/
+    }
+    @media only screen and (max-width: 768px) and (max-height: 1024px){ /** ipad mini 直向 **/
+    }
+    @media only screen and (max-width: 600px) and (max-height: 960px){ /** nexus7 **/
+    }
+    @media only screen and (max-width: 414px) and (max-height: 736px){ /** i6plus **/
+    }
+    @media only screen and (max-width: 375px) and (max-height: 627px){ /** i6 **/
+    }
+    @media only screen and (max-width: 384px) and (max-height: 567px){ /** nexus4 **/
+    }
+    @media only screen and (max-width: 360px) and (max-height: 567px){ /** nexus5 **/
+    }
+    @media only screen and (max-width: 320px) and (max-height: 568px){ /** i5 **/
+    }
+    @media only screen and (max-width: 320px) and (max-height: 480px){ /** i4 **/
+    }
+</style>
+<div>
+<input type="checkbox" id="authorFollow" class="authorFollow" value="追蹤作者" /><label class="authorFollowLabel" for="authorFollow"><span class="followUi"></span></label>
+</div>
+<script type="text/javascript">
+    var check_do_follow = true;
+    function follow_onclick(elem){
+        if(elem.is(':checked')){
+            if(confirm("確定要取消追蹤？")){
+                elem.prop('checked', !elem.prop('checked'));
+                check_do_follow = true;
+            }else{
+                check_do_follow = false;
+            }
+        }else{
+            elem.prop('checked', !elem.prop('checked'));
+            check_do_follow = true;
+        }
+    }
+    jQuery('#authorFollow').click(function(event){
+        event.preventDefault() ;
+        if(check_do_follow){
+                        jQuery.cookie('doAuthorFollow','11149') ;
+            loginToRedirect('') ;
+                    }
+    });
+            jQuery('#btn-popup-close').click(function(){
+            jQuery.removeCookie('doAuthorFollow') ;
+        }) ;
+    </script> </div>
+<div class="vce-author-links">
+<a href="https://www.facebook.com/mamaclub.tw" target="_blank" class="fa fa-facebook soc_squared"></a> </div>
+</div>
+</section>
+<div class='clear'></div><div class='dfp_ad_div' align='center'>
+<div class='dfp_ad_div' align='center'>
+<div class='dfp_ad' id='div-gpt-ad-1442370561462-1' style='    margin-bottom: 30px;'>
+<script type='text/javascript'>
+                        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1442370561462-1'); });
+                    </script>
+</div>
+</div>
+</div>
+<div id="comments" class="comments-main">
+<div class="comments-holder main-box">
+<h4 class="comment-title main-box-title">
+我要回應 </h4>
+<div id="respond" class="comment-respond">
+<h3 id="reply-title" class="comment-reply-title">我要留言 <small><a rel="nofollow" id="cancel-comment-reply-link" href="/learn/%e5%91%82%e7%a7%8b%e9%81%a0%ef%bc%9a%e7%88%b6%e6%af%8d%e8%80%81%e6%84%9b%e6%8b%bf%e9%80%99%e5%8d%81%e5%8f%a5%e8%a9%b1%e5%92%8c%e5%ad%a9%e5%ad%90%e8%aa%aa%e5%98%b4/?utm_source=mamaclub.tw#respond" style="display:none;">X</a></small></h3><p class="must-log-in trace_login" place="文章回覆"><a href="#" onclick="loginToRedirect(''); return false;">點此登入來回應</a></p> </div>
+<style>
+            #vce-main #main-wrapper #content #primary #comments .navigation{
+              padding-bottom: 0 ;
+            }
+          </style>
+<div id="fbComments" style="padding:20px;">
+<div class="fb-comments" data-href="https://mamaclub.com/learn/%e5%91%82%e7%a7%8b%e9%81%a0%ef%bc%9a%e7%88%b6%e6%af%8d%e8%80%81%e6%84%9b%e6%8b%bf%e9%80%99%e5%8d%81%e5%8f%a5%e8%a9%b1%e5%92%8c%e5%ad%a9%e5%ad%90%e8%aa%aa%e5%98%b4/" width="100%" data-numposts="5" data-colorscheme="light"></div>
+</div>
+</div>
+</div>
+<div class='clear'></div>
+<div align='center' class='dfp_ad  dfp_center' id='div-gpt-ad-1441769123577-6' style='height:90px; width:728px; margin: 0 auto;'><script type='text/javascript'>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1441769123577-6'); });</script></div>
+
+<amp-auto-ads type="adsense" data-ad-client="ca-pub-9668214884304211"></amp-auto-ads>
+
+</div>
+<aside id="sidebar" class="sidebar right">
+<div id="vce_adsense_widget-2" class="widget vce_adsense_widget vce_adsense_expand"> <div class="vce_adsense_wrapper">
+<div id="sidebar_1">
+<div class='dfp_ad dfp_center' id='div-gpt-ad-1441768880821-5' style='height:250px; width:300px;'><script type='text/javascript'>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1441768880821-5'); });</script></div>
+</div> </div>
+</div><div id="mmc_ranking_widget-3" class="widget vce_posts_widget MMC_Ranking_Widget"><h4 class="widget-title">熱門駐站作家</h4> <ul class="vce-post-list" style="padding-bottom:9px;">
+<li style="margin-bottom:0px;">
+<a href="" class="featured_image_sidebar number top_author" title="1"><span class="vce-post-img custom-widget-image" style="width:30px;line-height:45px;"><div style="background-color: #c0436e;width: 34px;height: 38px;font-size: 22px;font-weight: bold;color: white;text-align: center;border-radius: 0.2em;">1</div></span></a><a href="https://mamaclub.com/learn/author/cy43564647/" class="featured_image_sidebar avatar top_author" title="阿秤"><span class="vce-post-img custom-widget-image" style="width:30px;line-height:45px;"><img src="https://cdn.mamaclub.com/wp-content/uploads/avator/366604.jpg" width="30" height="30" /></span></a> <div class="vce-posts-wrap top_author ">
+<a href="https://mamaclub.com/learn/author/cy43564647/" title="阿秤" class="vce-post-link custom-widget-link" style="display: table-cell;vertical-align: middle;padding:0px;">阿秤</a>
+</div>
+<div class="ranking-status top_author">99+</div> </li>
+<li style="margin-bottom:0px;">
+<a href="https://mamaclub.com/learn/author/cy43564647/" class="featured_image_sidebar number top_author" title="2"><span class="vce-post-img custom-widget-image" style="width:30px;line-height:45px;"><div style="background-color: #c0436e;width: 34px;height: 38px;font-size: 22px;font-weight: bold;color: white;text-align: center;border-radius: 0.2em;">2</div></span></a><a href="https://mamaclub.com/learn/author/su1707358/" class="featured_image_sidebar avatar top_author" title="跪婦媽"><span class="vce-post-img custom-widget-image" style="width:30px;line-height:45px;"><img src="https://cdn.mamaclub.com/wp-content/uploads/avator/39247.jpg" width="30" height="30" /></span></a> <div class="vce-posts-wrap top_author ">
+<a href="https://mamaclub.com/learn/author/su1707358/" title="跪婦媽" class="vce-post-link custom-widget-link" style="display: table-cell;vertical-align: middle;padding:0px;">跪婦媽</a>
+</div>
+<div class="ranking-status top_author">99+</div> </li>
+<li style="margin-bottom:0px;">
+<a href="https://mamaclub.com/learn/author/su1707358/" class="featured_image_sidebar number top_author" title="3"><span class="vce-post-img custom-widget-image" style="width:30px;line-height:45px;"><div style="background-color: #c0436e;width: 34px;height: 38px;font-size: 22px;font-weight: bold;color: white;text-align: center;border-radius: 0.2em;">3</div></span></a><a href="https://mamaclub.com/learn/author/sh44156363/" class="featured_image_sidebar avatar top_author" title="好房網"><span class="vce-post-img custom-widget-image" style="width:30px;line-height:45px;"><img src="https://cdn.mamaclub.com/wp-content/uploads/avator/377212.jpg" width="30" height="30" /></span></a> <div class="vce-posts-wrap top_author ">
+<a href="https://mamaclub.com/learn/author/sh44156363/" title="好房網" class="vce-post-link custom-widget-link" style="display: table-cell;vertical-align: middle;padding:0px;">好房網</a>
+</div>
+<div class="ranking-status top_author">99+</div> </li>
+<li style="margin-bottom:0px;">
+<a href="https://mamaclub.com/learn/author/sh44156363/" class="featured_image_sidebar number top_author" title="4"><span class="vce-post-img custom-widget-image" style="width:30px;line-height:45px;"><div style="background-color: #c0436e;width: 34px;height: 38px;font-size: 22px;font-weight: bold;color: white;text-align: center;border-radius: 0.2em;">4</div></span></a><a href="https://mamaclub.com/learn/author/gm27723865/" class="featured_image_sidebar avatar top_author" title="Sophia Chang"><span class="vce-post-img custom-widget-image" style="width:30px;line-height:45px;"><img src="https://cdn.mamaclub.com/wp-content/uploads/avator/230601.jpg" width="30" height="30" /></span></a> <div class="vce-posts-wrap top_author ">
+<a href="https://mamaclub.com/learn/author/gm27723865/" title="Sophia Chang" class="vce-post-link custom-widget-link" style="display: table-cell;vertical-align: middle;padding:0px;">Sophia Chang</a>
+</div>
+<div class="ranking-status top_author">99+</div> </li>
+<li style="margin-bottom:0px;">
+<a href="https://mamaclub.com/learn/author/gm27723865/" class="featured_image_sidebar number top_author" title="5"><span class="vce-post-img custom-widget-image" style="width:30px;line-height:45px;"><div style="background-color: #c0436e;width: 34px;height: 38px;font-size: 22px;font-weight: bold;color: white;text-align: center;border-radius: 0.2em;">5</div></span></a><a href="https://mamaclub.com/learn/author/se44652008/" class="featured_image_sidebar avatar top_author" title="今周刊"><span class="vce-post-img custom-widget-image" style="width:30px;line-height:45px;"><img src="https://cdn.mamaclub.com/wp-content/uploads/avator/388228.jpg" width="30" height="30" /></span></a> <div class="vce-posts-wrap top_author ">
+<a href="https://mamaclub.com/learn/author/se44652008/" title="今周刊" class="vce-post-link custom-widget-link" style="display: table-cell;vertical-align: middle;padding:0px;">今周刊</a>
+</div>
+<div class="ranking-status top_author">99+</div> </li>
+</ul>
+<style>.widget_rank_more_button a{background: #DC4776;color: #FFF !important;padding: 13px;width: 120px;display: inline-block;border-radius: 4px;}.widget_rank_more_button a:hover{background: rgba(255,98,152,1);}</style>
+<div class="widget_rank_more_button" style="text-align: center;padding: 5px 9px 20px 9px;"><a class="mmc-homeBlockButtonStyle" href="/learn/author-rank">看更多</a></div>
+</div><div id="mmc_realtime_widget-3" class="widget vce_posts_widget MMC_RealTime_Widget"><h4 class="widget-title">動態牆</h4>
+<style>
+		.mmc-realtime-area{
+		    position: relative;
+		    min-height: 150px;
+		}
+		.mmc-realtime-area .active_user{
+			padding: 20px 0 10px 0;
+			text-align: center;
+			font-size: 20px;
+		}
+		.mmc-realtime-area .active_user span{
+			font-size: 24px;
+			border-bottom: 1px dashed #ddd;
+		}
+		.mmc-realtime-area hr{
+		    width: 90%;
+		    margin: 10px auto;
+		    text-align: center;
+		}
+		.mmc-realtime-area .mmc-realtime-post.vce-post-list{
+			padding: 10px 20px;
+			text-align: left;
+			margin: 0;
+		}
+		.mmc-realtime-area .mmc-realtime-post li{
+			display: inline-block;
+		    width: 100%;
+	        height: 50px;
+		    margin-bottom: 5px;
+		}
+		#sidebar .widget.MMC_RealTime_Widget .mmc-realtime-area .vce-post-list.mmc-realtime-post li .vce-posts-wrap,
+		.mmc-realtime-area .mmc-realtime-post li .vce-posts-wrap{
+			height: 50px !important;
+			display: flex;
+			align-items: center;
+		}
+		.mmc-realtime-area .mmc-realtime-post li .vce-posts-wrap a{
+			text-overflow: -o-ellipsis-lastline;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			-webkit-line-clamp: 2;
+			-webkit-box-orient: vertical;
+			padding: 0;
+		}
+		#sidebar .widget.MMC_RealTime_Widget .mmc-realtime-area{
+			padding: 0 !important;
+		}
+		#sidebar .widget.MMC_RealTime_Widget .mmc-realtime-area .vce-post-list.mmc-realtime-post li > a span,
+		.mmc-realtime-area .vce-post-list.mmc-realtime-post li > a span{
+		    padding: 0;
+			width: 100% !important;
+			max-width: 35% !important;
+			max-height: 50px;
+			overflow: hidden;
+		}
+		#sidebar .widget.MMC_RealTime_Widget .mmc-realtime-area .vce-post-list.mmc-realtime-post li > a span img,
+		.mmc-realtime-area .vce-post-list.mmc-realtime-post li > a span img{
+			width: 100% !important;
+			height: 100% !important;
+		}
+	</style><div class="mmc-realtime-area"><div class='active_user'>有 <span>897</span> 人正在看媽媽經</div><hr><ul class='vce-post-list mmc-realtime-post'><li>
+<a href="//mamaclub.com/?p=603768">
+<span class="vce-post-img custom-widget-image">
+<img src="https://cdn.mamaclub.com/wp-content/uploads/2020/02/20200215re02033_91x47.jpg" />
+</span>
+</a>
+<div class="vce-posts-wrap">
+<a href="//mamaclub.com/?p=603768" class="vce-post-link">抖音「絆倒挑戰」惡作劇正夯，數名孩童頭破血流【危險動作請勿模仿】</a>
+</div></li><li>
+<a href="//mamaclub.com/?p=460007">
+<span class="vce-post-img custom-widget-image">
+<img src="https://cdn.mamaclub.com/wp-content/uploads/2018/09/20180923_s0801_91x47.jpg" />
+</span>
+</a>
+<div class="vce-posts-wrap">
+<a href="//mamaclub.com/?p=460007" class="vce-post-link">四個重點策略，循序訓練寶寶如廁！</a>
+</div></li><li>
+<a href="//mamaclub.com/?p=542474">
+<span class="vce-post-img custom-widget-image">
+<img src="https://cdn.mamaclub.com/wp-content/uploads/2019/06/20190612_G0504_91x47.jpg" />
+</span>
+</a>
+<div class="vce-posts-wrap">
+<a href="//mamaclub.com/?p=542474" class="vce-post-link">中醫觀點：過敏性鼻炎的成因？少吃五大NG類食物可緩解症狀</a>
+</div></li><li>
+<a href="//mamaclub.com/?p=603724">
+<span class="vce-post-img custom-widget-image">
+<img src="https://cdn.mamaclub.com/wp-content/uploads/2020/02/20200215RE0101_91x47.jpg" />
+</span>
+</a>
+<div class="vce-posts-wrap">
+<a href="//mamaclub.com/?p=603724" class="vce-post-link">41歲孫芸芸母女合照像姊妹！透露「逆天美腿飲食法」</a>
+</div></li><li>
+<a href="//mamaclub.com/?p=319295">
+<span class="vce-post-img custom-widget-image">
+<img src="https://cdn.mamaclub.com/wp-content/uploads/2017/10/20171018_G0407-2_91x47.jpg" />
+</span>
+</a>
+<div class="vce-posts-wrap">
+<a href="//mamaclub.com/?p=319295" class="vce-post-link">養生飲打造免疫力，安迪湯比例怎麼煮？</a>
+</div></li></ul>
+<script>
+	formatNumber = function(number){
+		number += '';
+		x = number.split('.');
+		x1 = x[0];
+		x2 = x.length > 1 ? '.' + x[1] : '';
+		var rgx = /(\d+)(\d{3})/;
+		while (rgx.test(x1)) {
+			x1 = x1.replace(rgx, '$1' + ',' + '$2');
+		}
+		return x1 + x2;
+	}
+	jQuery(window).load(function() {
+		function magic_number(element,endNumber) {
+			var elem = jQuery(element);
+			jQuery({ Counter: elem.text() }).animate({ Counter: endNumber }, {
+			    duration: 800,
+			    easing: 'swing',
+			    step: function () {
+			      elem.text(Math.ceil(this.Counter));
+			    }
+		  	});
+		};
+		function display_post(index,p_url,p_title,p_thumb){
+			jQuery('.mmc-realtime-area .mmc-realtime-post li:nth-child('+index+')').html('<a href="'+p_url+'"><span class="vce-post-img custom-widget-image"><img src="'+p_thumb+'"/></span></a><div class="vce-posts-wrap"><a href="'+p_url+'" class="vce-post-link">'+p_title+'</a></div>');
+		}
+		function change_real_time_data(data,openUsers,openPosts){
+			var active_user = data['active_user'];
+			if(openUsers == 1){
+				magic_number('.mmc-realtime-area .active_user span',active_user);
+			}
+			if(openPosts == 1){
+				var display_post_begin = 0;
+				var display_post_count = "5";
+				for(var key in data){
+					var number_count = Number(key)+1;
+					if(key == display_post_count){break;}
+					display_post(number_count,data[key]['p_url'],data[key]['p_title'],data[key]['p_thumb']);
+				}
+			}
+		}
+		function ajax_real_time_data(first){
+			jQuery(function(){
+				jQuery.ajax({
+					type : "POST",
+					url : "//live.mamaclub.com/livewall/livewall.php",
+					dataType : "jsonp",
+					jsonp: "callback",
+					jsonpCallback: "jQueryActive",
+					success: function(data) {
+						change_real_time_data(data,1,1);
+						setTimeout(ajax_real_time_data, 9000);
+					}
+				})
+			})
+		}
+		setTimeout(ajax_real_time_data, 9000);
+	})
+	function jQueryActive(data){
+	}
+	</script></div></div><div id="mmc-polls-widget-2" class="widget widget_mmc-polls-widget"><h4 class="widget-title">媽媽大調查</h4>
+<style>
+			.widget_mmc-polls-widget #poll_div{
+				padding:0 !important;
+			}
+			.widget_mmc-polls-widget #poll_div a{
+				color: #dc4776;
+			}
+			.widget_mmc-polls-widget #poll_div #vote_btn{
+				color: rgb(255, 255, 255);
+				padding: 7px 0;
+				font-size: 16px;
+				background: rgb(220, 71, 118);
+			}
+			.widget_mmc-polls-widget #poll_div #gobacktopoll{
+				color: rgb(255, 255, 255);
+				padding: 15px 20px;
+				font-size: 16px;
+				-webkit-appearance: none;
+				background: rgb(220, 71, 118);
+			}
+			.widget_mmc-polls-widget #poll_div #vote_btn:hover{
+				background: #ff6298;
+			}
+			.widget_mmc-polls-widget #poll_div .wp-polls .poll-bg p strong{
+				line-height: 30px;
+			}
+			.widget_mmc-polls-widget #poll_div .wp-polls .poll-bg .wp-polls-ans li{
+				padding:0;
+				margin: 0 10px 15px;
+				line-height: 20px;
+			}
+			.widget_mmc-polls-widget #poll_div #poll_img{
+				overflow: hidden;
+				max-height: 165px;
+			}
+			.wp-polls-loading{
+				height: 28px;
+			}
+			#poll_div .poll_alert{
+				font-size: 20px;
+				line-height: 50px;
+				font-weight: bold;
+			}
+		</style>
+<div id="poll_div" name="poll_div"><div id="poll_img"><img src="https://cdn.mamaclub.com/wp-content/uploads/2019/03/大調查-0329媽媽崩潰.jpg" style="cursor:pointer;" onclick="document.location.href='https://mamaclub.com/learn/%E5%AA%BD%E5%AA%BD%E6%93%81%E6%9C%89%E5%A5%BD%E5%BF%83%E6%83%85%EF%BC%8C%E6%89%8D%E8%83%BD%E8%B5%B0%E9%81%8E%E5%B4%A9%E6%BD%B0%E8%82%B2%E5%85%92%E8%B7%AF/'"></div><div id="polls-167" class="wp-polls">
+<form id="polls_form_167" class="wp-polls-form" action="/agent.php" method="post">
+<p style="display: none;"><input type="hidden" id="poll_167_nonce" name="wp-polls-nonce" value="1939bd9138" /></p>
+<p style="display: none;"><input type="hidden" name="poll_id" value="167" /></p>
+<div class="poll-bg" style="border:1px solid #f0f0f0; background: #f7f7f7; padding: 10px 15px;margin: 10px 0px 10px;"><p style="text-align: left; padding: 10px 8px 0;
+"><strong onclick="document.location.href='https://mamaclub.com/learn/%E5%AA%BD%E5%AA%BD%E6%93%81%E6%9C%89%E5%A5%BD%E5%BF%83%E6%83%85%EF%BC%8C%E6%89%8D%E8%83%BD%E8%B5%B0%E9%81%8E%E5%B4%A9%E6%BD%B0%E8%82%B2%E5%85%92%E8%B7%AF/'" style="cursor: pointer; font-size: 24px;" style="font-size:24px">媽媽啊～哪件事讓妳最崩潰？</strong></p><div id="polls-167-ans" class="wp-polls-ans"><ul class="wp-polls-ul" style="padding-left: 30px; margin:0;">
+<li><input style="margin-left: -23px" type="radio" id="poll-answer-859" name="poll_167" value="859" /> <label style="padding-left: 5px;" for="poll-answer-859">拖拖拉拉什麼事都拖拖拉拉．．．</label></li>
+<li><input style="margin-left: -23px" type="radio" id="poll-answer-860" name="poll_167" value="860" /> <label style="padding-left: 5px;" for="poll-answer-860">前一秒才說不行，小孩馬上做．．．</label></li>
+<li><input style="margin-left: -23px" type="radio" id="poll-answer-861" name="poll_167" value="861" /> <label style="padding-left: 5px;" for="poll-answer-861">小孩不管什麼事都哭．．．</label></li>
+<li><input style="margin-left: -23px" type="radio" id="poll-answer-862" name="poll_167" value="862" /> <label style="padding-left: 5px;" for="poll-answer-862">每天都一堆家事．．．</label></li>
+<li><input style="margin-left: -23px" type="radio" id="poll-answer-863" name="poll_167" value="863" /> <label style="padding-left: 5px;" for="poll-answer-863">老公聽不懂我說的話．．．</label></li>
+</ul><p style="text-align: center; margin-bottom: 10px;"><input id="voteSubmit" style="color:#FFF; background:#dc4776;padding:15px 20px 15px;font-size:16px;-webkit-appearance: none;" onmouseOver="this.style.background='#ff6298'" onmouseOut="this.style.background='#dc4776'" type="button" name="vote" value="   投票   " class="Buttons" onclick="poll_vote(167);" /></p><p style="text-align: center;"><a class="trace_login" place="投票顯示結果" id="pollResultsBtn" href="#ViewPollResults" onclick="pressPollSeeResult(); loginToRedirect(''); return false;" title="顯示結果">顯示結果</a></p></div></div>
+</form>
+</div>
+<div id="polls-167-loading" class="wp-polls-loading"><img src="//mamaclub.com/wp-content/plugins/wp-polls/images/loading.gif?x29673" width="16" height="16" alt="Loading ..." title="Loading ..." class="wp-polls-image" /></div>
+</div></div><div id="vce_adsense_widget-3" class="widget vce_adsense_widget vce_adsense_expand"> <div class="vce_adsense_wrapper">
+<div id="sidebar_2">
+<div class='dfp_ad dfp_center' id='div-gpt-ad-1441768880821-6' style='height:100px; width:300px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1441768880821-6'); });
+</script>
+</div>
+</div> </div>
+</div><div id="vce_adsense_widget-1" class="widget vce_adsense_widget vce_adsense_expand"> <div class="vce_adsense_wrapper">
+<div id="sidebar_3">
+<div class='dfp_ad dfp_center' id='div-gpt-ad-1555639746540-0' style='height:250px; width:300px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1555639746540-0'); });
+</script>
+</div>
+</div> </div>
+</div><div id="vce_video_widget-1" class="widget vce_video_widget"><h4 class="widget-title">媽媽經ＴＶ</h4> <div class="video-widget-inside">
+<style>
+						.video-widget-inside *{
+					        -o-transition: all 0.1s ease-in;
+					        -webkit-transition: all 0.1s ease-in;
+					        -moz-transition: all 0.1s ease-in;
+					        transition: all 0.1s ease-in;
+					        letter-spacing: 0.4px;
+						}
+						#widget_video_bg{
+						    display: none;
+						    position: fixed;
+						    width: 100%;
+						    height: 100%;
+						    background-color: rgba(0,0,0,0.9);
+						    left: 0;
+						    top: 0;
+						    z-index: 10241;
+						}
+						#widget_video_box{
+							display: none;
+						    position: fixed;
+						    width: 53%;
+						    height: 64%;
+						    background-color: rgba(0,0,0,0.85);
+						    left: 50%;
+						    top: 50%;
+						    z-index: 10242;
+					        transform: translateX(-50%) translateY(-55%);
+					        box-shadow: 1px 5px 3px 0 rgba(0,0,0,0.2);
+				            border-radius: 8px;
+				            padding: 5px 10px 85px;
+				            text-align: center;
+						}
+						#widget_video_box .inside{
+						    height: 100%;
+						    width: 100%;
+						    margin: 0 auto;
+						    position: relative;
+						}
+						#widget_video_box .inside i{
+						    float: right;
+						    font-size: 19px;
+						    color: rgba(255,255,255,0.95);
+						    cursor: pointer;
+						}
+						#widget_video_box .inside iframe{
+							margin: 5px 0 20px;
+							position: relative;
+						}
+						#widget_video_box .inside .more_button{
+							position: relative;
+						    color: rgba(255, 255, 255,1);
+						    padding: 7px 19px;
+						    border-radius: 5px;
+						    font-size: 16px;
+						    background: rgba(220, 71, 118,1);
+						    box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.2);
+						}
+						#widget_video_box .inside .more_button:hover{
+		                    background: #ff6298;
+						}
+						#widget_video_box .inside i:hover{
+							color: rgba(220,71,118,0.85);
+						}
+						#widget_video{
+							position: relative;
+							cursor: pointer;
+							display: block;
+							height: 165px;
+							overflow: hidden;
+							-webkit-filter: grayscale(0.25);
+						}
+						#widget_video:hover{
+							-webkit-filter: none;
+						}
+						#widget_video img{
+						    margin-top: -30px;
+						}
+						#widget_video i{
+							left: 50%;
+						    top: 50%;
+						    margin-left: -25px;
+						    margin-top: -25px;
+						    font-size: 50px;
+						    color: rgba(0, 0, 0, 0.85);
+						    position: absolute;
+						    background: rgba(255,255,255,0.7);
+						    z-index: 1;
+						    line-height: 35px;
+						    border-radius: 11px;
+						    width: 49px;
+						    height: 34px;
+						}
+					</style>
+<div id="widget_video_bg" onclick="widget_video_close()"></div>
+<div id="widget_video_box"></div>
+<span id="widget_video" onclick="widget_video_open()" name="play">
+<i class="fa fa-youtube-play"></i>
+<img src="https://img.youtube.com/vi/fY6KWVtlw9c/hqdefault.jpg">
+</span>
+<script>
+						function widget_video_open(){
+							jQuery('#widget_video_box').append('<div class="inside"></div>');
+							jQuery('#widget_video_box .inside').append('<i class="fa fa-times-circle" onclick="widget_video_close()"></i>');
+							jQuery('#widget_video_box .inside').append('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/fY6KWVtlw9c?autoplay=1&showinfo=0&controls=0" frameborder="0" allowfullscreen ></iframe>');
+							jQuery('#widget_video_box .inside').append('<a class="more_button" href="https://mamaclub.com/learn/category/video/">看更多</a>');
+							jQuery('#widget_video_box').fadeIn("1000", "swing");
+							jQuery('#widget_video_bg').fadeIn("1000", "swing");
+							//mmcTv widget lightboxPlay inside
+							jQuery('#widget_video_box .inside .more_button').on('click',function(){
+							    var widgetTitle = jQuery('.widget.vce_video_widget').find('.widget-title').html().trim();
+							    var btnTitle = jQuery(this).html().trim();
+							});
+						}
+						function widget_video_close(){
+							jQuery('#widget_video_box').fadeOut("1000", "swing");
+							jQuery('#widget_video_bg').fadeOut("1000", "swing");
+							jQuery('#widget_video_box').find('.inside').remove();
+						}
+					</script>
+<p><a id="tvMoreBtn" href="//mamaclub.com/learn/category/video/">看更多</a></p>
+<div class="clear"></div>
+</div>
+</div><div id="vce_adsense_widget-5" class="widget vce_adsense_widget vce_adsense_expand"> <div class="vce_adsense_wrapper">
+<div id="sidebar_4">
+<div class='dfp_ad dfp_center' id='div-gpt-ad-1441768880821-8' style='height:600px; width:300px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1441768880821-8'); });
+</script>
+</div>
+</div> </div>
+</div><div id="vce_adsense_widget-10" class="widget vce_adsense_widget vce_adsense_expand"> <div class="vce_adsense_wrapper">
+<div id="sidebar_5">
+<div class='dfp_ad dfp_center' id='div-gpt-ad-1441768880821-9' style='height:250px; width:300px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1441768880821-9'); });
+</script>
+</div>
+</div> </div>
+</div><div id="recent-comments-4" class="widget MMC_Widget_Recent_Comments"><h4 class="widget-title">近期迴響</h4><ul id="recentcomments"><li class="recentcomments"><a href="https://mamaclub.com/learn/%e4%b9%9d%e6%97%8f%e6%ab%bb%e8%8a%b1%e7%a5%ad%e4%ba%94%e5%8d%83%e6%a3%b5%e6%ab%bb%e8%8a%b1%e7%b6%bb%e6%94%be%ef%bc%81%e5%85%a7%e6%b9%96%e5%a4%9c%e6%ab%bb%e5%ad%a3%e6%90%ad%e6%8d%b7%e9%81%8b%e5%b0%b1/#comment-9052"><b>林敏琪</b> 回應 九族櫻花祭五千棵櫻花綻放！內湖夜櫻季搭捷運就可到！<p>謝謝分享^^</p><span>回應日期 : 2020-02-16</span></a></li><li class="recentcomments"><a href="https://mamaclub.com/learn/%e2%98%85%e5%8f%b0%e6%9d%b1%e5%a8%9c%e8%b7%af%e5%bd%8e%e9%8a%80%e6%b2%b3%e9%85%92%e5%ba%97%e2%98%85%e5%9b%9b%e4%ba%ba%e6%88%bf%e4%b8%80%e6%b3%8a%e4%b8%80%e9%a3%9f2799%e5%85%83%ef%bc%8c2020%e5%b9%b4/#comment-9051"><b>林敏琪</b> 回應 ★台東娜路彎銀河酒店★四人房一泊一食$2799元，2020年旺日寒暑假免加價！<p>您好，不能加床喔～</p><span>回應日期 : 2020-02-16</span></a></li><li class="recentcomments"><a href="https://mamaclub.com/learn/%e2%98%85%e5%8f%b0%e6%9d%b1%e5%a8%9c%e8%b7%af%e5%bd%8e%e9%8a%80%e6%b2%b3%e9%85%92%e5%ba%97%e2%98%85%e5%9b%9b%e4%ba%ba%e6%88%bf%e4%b8%80%e6%b3%8a%e4%b8%80%e9%a3%9f2799%e5%85%83%ef%bc%8c2020%e5%b9%b4/#comment-9050"><b>林敏琪</b> 回應 ★台東娜路彎銀河酒店★四人房一泊一食$2799元，2020年旺日寒暑假免加價！<p>四人就可以唷～沒有限制^^</p><span>回應日期 : 2020-02-16</span></a></li><li class="recentcomments"><a href="https://mamaclub.com/learn/%e2%98%85%e5%8f%b0%e6%9d%b1%e5%a8%9c%e8%b7%af%e5%bd%8e%e9%8a%80%e6%b2%b3%e9%85%92%e5%ba%97%e2%98%85%e5%9b%9b%e4%ba%ba%e6%88%bf%e4%b8%80%e6%b3%8a%e4%b8%80%e9%a3%9f2799%e5%85%83%ef%bc%8c2020%e5%b9%b4/#comment-9049"><b>謝銘怡</b> 回應 ★台東娜路彎銀河酒店★四人房一泊一食$2799元，2020年旺日寒暑假免加價！<p>請問二小有限年齡嗎？還是四人就可以了</p><span>回應日期 : 2020-02-14</span></a></li><li class="recentcomments"><a href="https://mamaclub.com/learn/%e2%98%85%e5%8f%b0%e6%9d%b1%e5%a8%9c%e8%b7%af%e5%bd%8e%e9%8a%80%e6%b2%b3%e9%85%92%e5%ba%97%e2%98%85%e5%9b%9b%e4%ba%ba%e6%88%bf%e4%b8%80%e6%b3%8a%e4%b8%80%e9%a3%9f2799%e5%85%83%ef%bc%8c2020%e5%b9%b4/#comment-9048"><b>匿名</b> 回應 ★台東娜路彎銀河酒店★四人房一泊一食$2799元，2020年旺日寒暑假免加價！<p>請問以此方案入住五大一小需加價多少？</p><span>回應日期 : 2020-02-13</span></a></li></ul></div><div id="vce_adsense_widget-16" class="widget vce_adsense_widget vce_adsense_expand"> <div class="vce_adsense_wrapper">
+<div id="sidebar_5">
+<div class='dfp_ad dfp_center' id='div-gpt-ad-1441768880821-10' style='height:600px; width:300px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1441768880821-10'); });
+</script>
+</div>
+</div> </div>
+</div><div id="vce_adsense_widget-25" class="widget vce_adsense_widget vce_adsense_expand"> <div class="vce_adsense_wrapper">
+<script>
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/187986430/YSM關鍵字', [300, 250], 'div-gpt-ad-1506759984849-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+  });
+</script>
+
+<div id='div-gpt-ad-1506759984849-0' style='height:250px; width:300px;'>
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1506759984849-0'); });
+</script>
+</div>
+</div>
+</div></aside></div>
+<script>
+            var expired = new Date();
+            expired.setTime(expired.getTime() + (-1*24*60*60*1000));
+            document.cookie="is_sex=1; expires="+expired+"; domain=.mamaclub.com; path=/";
+        </script>
+<footer id="footer" class="site-footer">
+<div class="container">
+<div class="container-fix">
+<div class="bit-3">
+<div id="text-19" class="widget widget_text"><h4 class="widget-title">媽媽經粉絲專頁</h4> <div class="textwidget"><div class="fb-page" data-href="https://www.facebook.com/mamaclub.tw" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"></div></div>
+</div> </div>
+<div class="bit-3">
+<div id="text-18" class="widget widget_text"><h4 class="widget-title">我們正在尋找駐站作家 &#038; 工作夥伴</h4> <div class="textwidget"><p>媽媽經尋找駐站作家 & 工作夥伴，歡迎喜歡寫作，有經營部落格，樂於分享生活經驗的寫手作家們來報名！更歡迎想要直接加入媽媽經團隊的你，來看看我們有什麼職缺舞台！</p>
+<div style="text-align: center; padding: 10px 0;">
+<a id="footer_btn_1" href="https://mamaclub.com/learn/author-signupreadme" class="footer-btn">歡迎成為駐站作家</a> <a id="footer_btn_2" href="https://www.104.com.tw/jobbank/custjob/index.php?r=cust&j=603c446d3638406932343c653a40381b82b2b2b274348562664j48" target="blank" class="footer-btn">一起成為工作夥伴</a>
+</div>
+</div>
+</div> </div>
+<div class="bit-3">
+<div id="nav_menu-11" class="widget widget_nav_menu"><h4 class="widget-title">關於媽媽經</h4><div class="menu-mmc_footer-container"><ul id="menu-mmc_footer" class="menu"><li id="menu-item-74283" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-74283"><a href="https://mamaclub.com/about/">關於我們</a></li>
+<li id="menu-item-74282" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-74282"><a href="https://mamaclub.com/contact/">聯絡我們</a></li>
+<li id="menu-item-74280" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-74280"><a href="https://mamaclub.com/servicerule/">服務條款</a></li>
+<li id="menu-item-74279" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-74279"><a href="https://mamaclub.com/privacy/">隱私權條款</a></li>
+<li id="menu-item-90092" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-90092"><a href="https://mamaclub.com/sitemap/">網站地圖</a></li>
+</ul></div></div><div id="text-21" class="widget widget_text"> <div class="textwidget"><style>
+#footer .container .container-fix > div:last-child .widget.widget_text{background: none;border: none;    display: none;}
+#footer .container .container-fix > div:last-child .widget.widget_text .textwidget{float: right;margin-top: -154px;position:relative;}
+</style>
+<a id="lineat_pc" href="https://mamaclub.com/line/"><img width="140px" src="https://cdn.mamaclub.com/wp-content/uploads/2015/08/mma_line_pc.png"></a>
+<script>jQuery( document ).ready(function() {jQuery('#footer .container .container-fix > div:last-child .widget.widget_nav_menu').append(jQuery('#footer .container .container-fix > div:last-child .widget.widget_text'));jQuery('footer .container .container-fix > div:last-child .widget.widget_text').css('display','inline');})</script></div>
+</div><div id="text-22" class="widget widget_text"> <div class="textwidget"><style>#footer .container #text-22{display:block}
+#footer .container #text-22 .textwidget{
+    float: none;
+    display: block;
+    margin-top: 10px;}</style>
+<div class="download_area_footer"><p style="margin:  15px 0 5px;    font-weight: 600;">下載媽媽經 App</p>
+<a class="googleplay" href="javascript:void(0)" target="_blank">
+<img width="48%" style="border-radius: 5px;" src="https://cdn.mamaclub.com/wp-content/uploads/2016/03/googleplayicon-e1538477460208.png" alt="googleplay" class="img-responsive">
+</a>
+<a class="appstore" href="https://itunes.apple.com/tw/app/%E5%AA%BD%E5%AA%BD%E7%B6%93/id869283911?mt=8" target="_blank">
+<img width="48%" style="border-radius: 5px;" src="https://cdn.mamaclub.com/wp-content/uploads/2016/03/appstoreicon-e1538477562311.png" alt="appstore" class="img-responsive">
+</a>
+</div></div>
+</div> </div>
+</div>
+</div>
+<div class="container-full site-info">
+<div class="container">
+<div class="vce-wrap-left" style="display: flex; align-items: center;">
+<p><span style="color: #ffffff; font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; text-align: center;">媽媽經MamaClub&copy; 版權所有</span></p> </div>
+</div>
+</div>
+</footer>
+</div>
+</div>
+<div id="rightSlide">
+<a id="sliderLineMB" style="z-index:10240; position:fixed; text-align:center; right:20px; bottom:250px; width:47px !important; height:initial; margin-bottom:0; display:none;" href="line://msg/text/父母老愛拿這十句話和孩子說嘴%0D%0Ahttps://mamaclub.com/?p=200446&mmc_ref=line">
+<div style="background:#00c300; border-radius: 5px;">
+<img style="padding:4px;" title="透過Line分享" alt="透過Line分享" src="//mamaclub.com/wp-content/themes/voice/images/share-icon/line-icon.png?x29673">
+</div>
+</a> <a href="javascript:void(0)" id="back-top" style="margin: 0 auto; z-index: 10240; width: 43px; height: 43px; bottom: 163px; right: 22px; background: #dc4776; opacity: 0.6;">
+<img style="margin-top: -5px;" src="//mamaclub.com/wp-content/themes/voice/images/share-icon/up-icon.png?x29673">
+</a>
+</div>
+<script>
+    function pressPollSeeResult(){
+    	var pressResult = "";
+		jQuery("#poll_div").each(function(){
+			pressResult = jQuery(this).find("form").attr("id");
+		});
+		var date = new Date();
+		date.setTime(date.getTime() + 120000);
+		jQuery.cookie("pressPollResult", pressResult, { path:"/", expires: date });
+    }
+    function pollAnsChecked(){
+    	var pollAns = [];
+    	var pollForm = [];
+    	jQuery("#poll_div .wp-polls-ans ul li").each(function(){
+    		if(jQuery(this).find("input").prop("checked") == true){
+    			pollAns.push(jQuery(this).find("input").attr("id"));
+    		}
+    		pollForm = jQuery(this).parents("form").attr("id");
+    	});
+		pollAns = pollForm + "," + pollAns;
+		var date = new Date();
+		date.setTime(date.getTime() + 120000);
+    	jQuery.cookie("pollAnsOption", pollAns, { path:"/", expires: date });
+    }
+    function triggerPoll(){
+    	var pollAnsStr = jQuery.cookie("pollAnsOption");
+    	var pressCheck = jQuery.cookie("pressPollResult");
+    	if(pressCheck !== undefined){
+    		jQuery("#" + pressCheck + " a[href=#ViewPollResults]").trigger("click");
+    		jQuery.cookie("pressPollResult", "", { expires: -1 });
+    		jQuery.cookie("pollAnsOption", "", { expires: -1 });
+    	}
+    	if(pollAnsStr !== undefined){
+	    	var pollAnsAry = pollAnsStr.split(",");
+	    	for(var i = 0; i < pollAnsAry.length; i++){
+	    		jQuery("#" + pollAnsAry[0] + " #" + pollAnsAry[i+1]).prop("checked",true);
+	    	}
+	    	jQuery("#" + pollAnsAry[0] + " #voteSubmit").trigger("click");
+	    	jQuery.cookie("pressPollResult", "", { expires: -1 });
+    		jQuery.cookie("pollAnsOption", "", { expires: -1 });
+	    }
+    }
+	</script><script>
+      function pressCollect(){
+        if(mmc_trace_id <= 0){
+            if(confirm("請登入會員")){
+                var postCollectState = "collected";
+                var date = new Date();
+                date.setTime(date.getTime() + 120000);
+                jQuery.cookie("pressCollect", postCollectState, { expires: date, path:"/" });
+                loginToRedirect("");
+                return false;
+            }
+      }else{
+        jQuery(".wpfp-link").trigger("click");
+            alert("已加入收藏!");
+        }
+    }
+    function triggerCollect(){
+        var pressCheck = jQuery.cookie("pressCollect");
+        if(typeof pressCheck !== "undefined"){
+            jQuery(".wpfp-link:not(.remove-parent)").trigger("click");
+            alert("已加入收藏!");
+            jQuery.removeCookie("pressCollect", { path: "/" });
+            jQuery.removeCookie("pressCollect", { path: "/", domain: ".mamaclub.com" });
+        }
+    }
+    jQuery(function(){
+        triggerCollect();
+    });
+    </script><script type="text/javascript" src="//mamaclub.com/wp-content/themes/voice-child/trace.js?x29673"></script><div id="loginPopupLayout" style="display:none;">
+<div class="lightbox-target" id="lightbox-target">
+<div class="lightbox-overlay"></div>
+<div class="lightbox-content" id="lightbox-content" style="min-height: 525px;  ">
+<div class="popup-topbar2">
+<div class="popup-login-logo"></div>
+<div class="btn-popup-close" id="btn-popup-close"></div>
+</div>
+<div class="lightbox-content-center" id="lightbox-content-center">
+<div class="lightbox-content-center" id="loginLayoutInnr">
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+
+    function listenMessage(msg) {
+
+        if(parseInt(msg.data) > 0){
+
+            var height = parseInt(msg.data) + 85;
+            jQuery('#lightbox-content').css('height',height);
+            jQuery('#lightbox-content').css('min-height',height)
+            if (window.addEventListener) {
+                window.removeEventListener("message", listenMessage);
+            }
+
+        }
+
+    }
+
+    function getMessage(){
+        if (window.addEventListener) {
+            window.addEventListener("message", listenMessage);
+        } else {
+            window.attachEvent("onmessage", listenMessage);
+        }
+    }
+
+    function closeLoginForm(){
+        jQuery('#loginPopupLayout').hide();
+        jQuery('#loginLayoutInnr').html('');
+    }
+
+    jQuery('#loginPopupLayout #btn-popup-close').on('click', function(){
+        var redirectHash = jQuery.cookie('ssoHash');
+        if(typeof redirectHash !== undefined && redirectHash != ""){
+            if(jQuery(document).scrollTop() != redirectHash){
+                jQuery('html, body').animate({
+                    scrollTop: redirectHash
+                }, 10);
+            }
+            ssoHashClear();
+        }
+        closeLoginForm();
+    });
+
+    
+
+    function fixIosSafariLayout(){
+        // jQuery("#loginPopupLayout .lightbox-target").css({'position':'absolute','overflow':"inherit"});
+        // jQuery("body").animate({scrollTop:0}, 0);
+        
+    }
+
+</script>
+<script>
+                function mmcLoginpopup(url){jQuery("#loginLayoutInnr").html('<iframe width="100%" height="100%" id="loginIframe"src="'+url+'"style="margin:0; padding: 0; overflow-y: none" onload="getMessage();"></iframe>');
+                    jQuery("#loginPopupLayout").show();}
+                function mmc_poplogin(){
+                    LoginUrl = "https://api.mamaclub.com/mmc_oauth/authorize.php?response_type=code&client_id=mmc_sso_learn_ssl&state=mmc_login&scope=display_name login_in user_email ID&signup_from=learn";
+					jQuery("#lightbox-content").css("min-height","391px")
+                    mmcLoginpopup(LoginUrl);
+                }
+                function mmc_popsignup(){
+                    signupUrl = "https://api.mamaclub.com/mmc_oauth/authorize.php?response_type=code&client_id=mmc_sso_learn_ssl&state=mmc_regist&scope=display_name login_in user_email ID&signup_from=learn";
+                    mmcLoginpopup(signupUrl);
+                }
+                function mmc_poploginfb(){
+                    LoginUrl = "https://api.mamaclub.com/mmc_oauth/authorize.php?response_type=code&client_id=mmc_sso_learn_ssl&state=mmc_login&scope=display_name login_in user_email ID&signup_from=learn&fb=1";
+					jQuery("#lightbox-content").css("min-height","391px")
+                    mmcLoginpopup(LoginUrl);
+                }</script><script>
+                function MMC_Login(){
+                    LoginUrl = "https://api.mamaclub.com/mmc_oauth/authorize.php?response_type=code&client_id=mmc_sso_learn_ssl&state=mmc_login&scope=display_name login_in user_email ID&signup_from=learn";
+					jQuery("#lightbox-content").css("min-height","391px")
+                    jQuery(".vce-responsive-nav.nav-open").trigger("click");
+                    
+                    mmcLoginpopup(LoginUrl);
+                }
+                function MMC_Signup(){
+                    signupUrl = "https://api.mamaclub.com/mmc_oauth/authorize.php?response_type=code&client_id=mmc_sso_learn_ssl&state=mmc_regist&scope=display_name login_in user_email ID&signup_from=learn";
+                    jQuery(".vce-responsive-nav.nav-open").trigger("click");
+                    mmcLoginpopup(signupUrl);
+                }
+                function MMC_LoginFb(){
+                    LoginUrl = "https://api.mamaclub.com/mmc_oauth/authorize.php?response_type=code&client_id=mmc_sso_learn_ssl&state=mmc_login_fb&scope=display_name login_in user_email ID&signup_from=learn";
+					jQuery("#lightbox-content").css("min-height","391px")
+                    jQuery(".vce-responsive-nav.nav-open").trigger("click");
+                    mmcLoginpopup(LoginUrl);
+                }</script><script>
+            var date = new Date();
+            date.setTime(date.getTime() + 86400000);
+            function setSsoCookie(url){
+                if((typeof url !== "undefined") && url != ""){
+                    jQuery.cookie("ssoRedirect", url, { path:"/", expires: date });
+                }else{
+                    jQuery.cookie("ssoRedirect", "//mamaclub.com/learn/%e5%91%82%e7%a7%8b%e9%81%a0%ef%bc%9a%e7%88%b6%e6%af%8d%e8%80%81%e6%84%9b%e6%8b%bf%e9%80%99%e5%8d%81%e5%8f%a5%e8%a9%b1%e5%92%8c%e5%ad%a9%e5%ad%90%e8%aa%aa%e5%98%b4/?utm_source=mamaclub.tw", { path:"/", expires: date });
+                }
+                jQuery.cookie("ssoHash", jQuery(document).scrollTop(), { path:"/", expires: date });
+
+            }
+            function popupLogin(url,data){
+                jQuery.cookie("ssoData", data, { path:"/", expires: date });
+                return loginToRedirect(url);
+            }
+            function popupSignup(url){
+                jQuery.cookie("ssoData", data, { path:"/", expires: date });
+                return signupToRedirect(url);
+            }
+            function loginToRedirect(url){
+                if( url == "friDay_login" ){
+                    var d = new Date();
+                    d.setTime(d.getTime() + (10*1000));
+                    var expires = "expires="+ d.toUTCString();
+                    document.cookie = "friDay_login=1;" + expires + ";path=/";    
+                }
+                if( url == "lohas" ){
+                    jQuery.cookie("lohas",1);
+                }
+                
+                MMC_Login();
+                return false;
+            }
+            function signupToRedirect(url){
+                setSsoCookie(url);
+                MMC_Signup();
+                return false;
+            }
+            function ssoHashClear(){
+                jQuery.cookie("ssoHash","",{ expires: -1 });
+            }jQuery("a[title='MMC_logout']").parent().remove();jQuery("a[title='MMC_login']").attr("onclick","return loginToRedirect();");</script><script>
+            jQuery(document).ready(function(){
+                setSsoCookie('');
+            });
+            </script><link rel='stylesheet' id='mmcLoginStyle-css' href='//assets.mamaclub.com/wp-content/themes/voice/mmcMemberPlus/assets/css/loginLayout.css' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var pollsL10n = {"ajax_url":"https:\/\/mamaclub.com\/wp-admin\/admin-ajax.php","text_wait":"Your last request is still being processed. Please wait a while ...","text_valid":"\u8acb\u9078\u64c7\u4e00\u500b\u7b54\u6848","text_multiple":"\u6211\u5011\u9019\u500b\u554f\u984c\u6700\u591a\u80fd\u9078\u64c7\uff1a","show_loading":"1","show_fading":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//assets.mamaclub.com/wp-content/plugins/wp-polls/polls-js.js' defer '></script>
+<script type='text/javascript' src='//assets.mamaclub.com/wp-content/themes/voice/js/imagesloaded.pkgd.min.js' defer '></script>
+<script type='text/javascript' src='//assets.mamaclub.com/wp-content/themes/voice/js/owl.carousel.min.js' defer '></script>
+<script type='text/javascript' src='//assets.mamaclub.com/wp-content/themes/voice/js/affix.js' defer '></script>
+<script type='text/javascript' src='//assets.mamaclub.com/wp-content/themes/voice/js/jquery.matchHeight.js' defer '></script>
+<script type='text/javascript' src='//assets.mamaclub.com/wp-content/themes/voice/js/jquery.fitvids.js' defer '></script>
+<script type='text/javascript' src='//assets.mamaclub.com/wp-content/themes/voice/js/jquery.sidr.min.js' defer '></script>
+<script type='text/javascript' src='//assets.mamaclub.com/wp-content/themes/voice/js/jquery.magnific-popup.min.js' defer '></script>
+<script type='text/javascript' src='//assets.mamaclub.com/wp-includes/js/comment-reply.min.js' defer '></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var vce_js_settings = {"sticky_header":"1","sticky_header_offset":"600","sticky_header_logo":"https:\/\/cdn.mamaclub.com\/wp-content\/uploads\/2015\/04\/head-logo-140x66.png","logo_retina":"","rtl_mode":"0","ajax_url":"https:\/\/mamaclub.com\/wp-admin\/admin-ajax.php","lay_fa_grid_center":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//assets.mamaclub.com/wp-content/themes/voice/js/custom.js' defer '></script>
+<script type='text/javascript' src='//assets.mamaclub.com/wp-includes/js/wp-embed.min.js' defer '></script>
+<script type='text/javascript' src='//assets.mamaclub.com/wp-content/themes/voice/mmcMemberPlus/assets/js/jquery.cookie.js' defer '></script>
+<script type="text/javascript">
+jQuery( "#article-survey .as-related-ul-li" ).each(function(){
+    jQuery(this).mouseover(function() {
+        jQuery(this).find('i').css({
+            'text-indent': '0.5rem',
+        })
+    });
+    jQuery(this).mouseout(function() {
+        jQuery(this).find('i').css({
+            'text-indent': '-1rem',
+        })
+    });
+});
+var doProgressbar = function(element,value,color,direction) {
+    var elem = jQuery(element);
+    if(typeof direction == 'undefined'){direction = "left";};
+    elem.addClass('float-'+direction);
+    elem.css({'background-color':color});
+    elem.animate({
+        width: value + "%"
+    },100);
+}
+var magicNumber = function(element,endNumber) {
+     var elem = jQuery(element);
+     
+     jQuery({ Counter: elem.text() }).animate({ Counter: endNumber }, {
+          duration: 1900,
+          easing: 'swing',
+          step: function () {
+            elem.text(Math.ceil(this.Counter));
+          }
+     });
+};
+var doVoted = function(){
+    // if (article_survey.Y + article_survey.N < 20) {
+         jQuery('#article-survey .as-progress').hide();
+         jQuery('#article-survey .as-progress-out').hide();
+    // }
+    jQuery('#article-survey .as.question').slideUp();
+    jQuery('#article-survey .as.finished').slideDown();
+    jQuery('#article-survey .as.question').addClass('display-none');
+    jQuery('#article-survey .as.finished').removeClass('display-none');
+    if (article_survey.Y + article_survey.N >= 0) {
+        doProgressbar('#article-survey .choice-yes',jQuery('#article-survey .choice-yes').attr('data-value'),'#84FF7C','left');
+        doProgressbar('#article-survey .choice-no',jQuery('#article-survey .choice-no').attr('data-value'),'#EBEDF1','right');
+        jQuery('#article-survey .magic-number').each(function(index){
+            magicNumber(jQuery(this),jQuery(this).attr('magic-num'));
+        });
+    }
+
+}
+jQuery("#article-survey .as-button").click(function(){
+    if (onSurvey)
+        return false;
+    onSurvey = true;
+    var yn = jQuery(this).attr("data-value");
+    jQuery.ajax({
+        url:"https://mamaclub.com/wp-admin/admin-ajax.php",
+        data:{"action":"update_article_survey","post_id":article_survey_id, "yn":yn},
+        method:"post"
+    });
+    if (yn == 'Y')
+        article_survey.Y += 1;
+    else
+        article_survey.N += 1;
+    showMoreHelp(yn);
+});
+function showMoreHelp(yn)
+{
+    var percentY = parseInt(article_survey.Y / (article_survey.Y + article_survey.N) * 100);
+    var percentN = 100 - percentY;
+    if ((article_survey.Y + article_survey.N) > 10) {
+        jQuery('#survey_response').html(jQuery('#survey_response').html().replace(/\[PERCENT\]/, percentY + '%'));
+        if (yn == 'N')
+            jQuery('#survey_response').html(jQuery('#survey_response').html().replace(/也/, ''));
+    } else {
+        jQuery('#survey_response').html('感謝您提供寶貴的意見！');
+    }
+
+    var str = jQuery('#article-survey .as-progress-out span:eq(0)').html();
+    //console.log(jQuery('#article-survey .as-progress-out span:eq(0)').html());
+    str = str.replace(/\[SURVEY-Y\]/g, percentY);
+    jQuery('#article-survey .as-progress-out span:eq(0)').html(str);
+    var str = jQuery('#article-survey .as-progress-out span:eq(0)').next().html();
+    str = str.replace(/\[SURVEY-N\]/g, percentN);
+    jQuery('#article-survey .as-progress-out span:eq(0)').next().html(str);
+    jQuery('#article-survey .choice-yes').attr('data-value', percentY);
+    jQuery('#article-survey .choice-no').attr('data-value', percentN);
+    doVoted();
+}
+var onSurvey = false;
+</script><script src="//mamaclub.com/wp-content/themes/voice/mmc_theme_options/additional_js.js?x29673"></script><script type="text/javascript">is_login = "";</script>
+
+
+
+<script>
+var _comscore = _comscore || [];
+
+</script>
+<script>
+  _comscore.push({ c1: "2", c2: "17564697",
+      options: {
+          url_append: "comscorekw=PREGNANTANDEDUCATED"
+      }
+  });
+</script>
+<script>
+(function() {
+      var s = document.createElement("script"), el = document.getElementsByTagName("script")[0];
+      s.async = true;
+      s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+      el.parentNode.insertBefore(s, el);
+  })();</script>
+<noscript><img src="http://b.scorecardresearch.com/p?c1=2&c2=17564697&cv=2.0&cj=1" /></noscript>
+<script>
+	var post_id = '200446';
+	document.cookie="pno="+post_id+"; domain=mamaclub.com; path=/";
+</script>
+<script type="text/javascript" src="/wp-content/themes/voice/js/trace_login.js?x29673"></script>
+<link rel="stylesheet" href="//mamaclub.com/wp-content/themes/voice/mmcIdleView/idlebox.css?x29673" type="text/css" />
+<script src="//mamaclub.com/wp-content/themes/voice/js/idleViewCtrl.js?x29673"></script>
+<script>
+        var directory_uri = "//mamaclub.com/wp-content/themes/voice";
+        idleViewCtrl();
+    </script>
+<script>
+    jQuery( document ).ready(function() {
+
+        beforeHot = "<img id =\"beforeHot\" style =\"height: 23px; margin-top: -3px; padding-right: 6px;\" title =\"hot\" alt =\"hot\" src =\"//mamaclub.com/wp-content/themes/voice/images/share-icon/hot-white-icon.gif\">";
+        afterHot  = "<img id =\"afterHot\" style  =\"height: 23px; margin-top: -9px; padding-left : 2px;\" title =\"hot\" alt =\"hot\" src =\"//mamaclub.com/wp-content/themes/voice/images/share-icon/hot-white-icon.gif\">";
+        beforeEditorCampaign = "<img id =\"beforeEditorCampaign\" style =\"height: 21px; margin-top: -3px; padding-right: 6px;\" title =\"editorCampaign\" alt =\"editorCampaign\" src =\"//cdn.mamaclub.com/wp-content/uploads/2016/05/editor-campaign-icon.gif\">";
+        afterEditorCampaign  = "<img id =\"afterEditorCampaign\" style  =\"height: 21px; margin-top: -9px; padding-left : 9px;\" title =\"editorCampaign\" alt =\"editorCampaign\" src =\"//cdn.mamaclub.com/wp-content/uploads/2016/05/editor-campaign-icon.gif\">";
+
+        jQuery("#menu-item-211639 > a").prepend(beforeHot);
+        
+                        jQuery("#menu-item-281351 > a").prepend(beforeEditorCampaign); //official
+
+                        jQuery("#sidr-id-menu-item-281351").css('background','#fbe1f1'); //official
+
+                        jQuery("#sidr-id-menu-item-170944 > a").attr('href', '//mamaclub.com/campaign/travel/?utm_source=手機左上單元列').html('出遊超EZ，吃喝玩樂全攻略！').append(afterEditorCampaign); //official
+
+        jQuery(".sidr-class-search-header-wrap").remove();
+        jQuery(".search-header-wrap").remove();
+    });
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"7616f8d5c7","applicationID":"47439934","transactionName":"M11RbEoHXRAFW0dcWwoXcltMD1wNS0taW1MIXQ==","queueTime":0,"applicationTime":625,"atts":"HxpSGgIdTh4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
+<script>
+var post_tags = '家庭教育 教養 ';
+//console.log(post_tags);
+  document.cookie = "post_tags=" + post_tags + '; domain=.mamaclub.com; path=/';
+
+var ajax_url = 'https://mamaclub.com/wp-admin/admin-ajax.php';
+var post_id = '200446';
+var user_id = '0' ;
+var utm_medium = '' ;
+var url = location.href ;
+var title = jQuery('.entry-title').first().html();
+var expire_days = 1; // 過期日期(天)
+var d = new Date();
+d.setTime(d.getTime() + (expire_days * 24 * 60 * 60 * 1000));
+var expires = "expires=" + d.toGMTString();
+document.cookie = "utm_medium=" + utm_medium + "; " + expires + '; domain=.mamaclub.com; path=/';
+
+</script>
